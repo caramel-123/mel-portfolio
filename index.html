@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Melfred Bernabe — Portfolio</title>
+<meta name="color-scheme" content="light dark" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- theme handled inline before paint to avoid flash -->
+  <script>
+    (function () {
+      var stored = localStorage.getItem('theme');
+      var theme = stored || 'system';
+      var resolved = theme === 'system'
+        ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light')
+        : theme;
+      document.documentElement.setAttribute('data-theme', resolved);
+      document.documentElement.setAttribute('data-theme-pref', theme);
+    })();
+  </script>
+
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <nav class="sidebar" aria-label="Primary">
+    <div class="sidebar-top">
+      <a class="brand" href="#top">mb.</a>
+      <ul class="nav-list">
+        <li><a href="#intro" class="nav-link" data-nav>intro</a></li>
+        <li><a href="#projects" class="nav-link" data-nav>projects</a></li>
+        <li><a href="#about" class="nav-link" data-nav>about</a></li>
+        <li><a href="#contact" class="nav-link" data-nav>contact</a></li>
+      </ul>
+    </div>
+    <div class="sidebar-bottom">
+      <ul class="nav-list mono-list">
+        <li><a href="mailto:melfredbernabe7@gmail.com">email ↗</a></li>
+        <li><a href="https://github.com" target="_blank" rel="noopener">github ↗</a></li>
+        <li><a href="https://linkedin.com" target="_blank" rel="noopener">linkedin ↗</a></li>
+      </ul>
+      <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+        <span class="theme-toggle-label">theme</span>
+        <span class="theme-toggle-value" id="theme-toggle-value">system</span>
+      </button>
+    </div>
+  </nav>
+
+  <header class="topbar" id="topbar">
+    <a class="brand" href="#top">mb.</a>
+    <button class="menu-toggle" id="menu-toggle" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <div class="mobile-menu" id="mobile-menu">
+    <ul class="nav-list">
+      <li><a href="#intro" data-nav>intro</a></li>
+      <li><a href="#projects" data-nav>projects</a></li>
+      <li><a href="#about" data-nav>about</a></li>
+      <li><a href="#contact" data-nav>contact</a></li>
+    </ul>
+    <ul class="nav-list mono-list">
+      <li><a href="mailto:melfredbernabe7@gmail.com">email ↗</a></li>
+      <li><a href="https://github.com" target="_blank" rel="noopener">github ↗</a></li>
+      <li><a href="https://linkedin.com" target="_blank" rel="noopener">linkedin ↗</a></li>
+    </ul>
+    <button class="theme-toggle" id="theme-toggle-mobile" aria-label="Toggle theme">
+      <span class="theme-toggle-label">theme</span>
+      <span class="theme-toggle-value" id="theme-toggle-value-mobile">system</span>
+    </button>
+  </div>
+
+  <main id="main">
+    <span id="top"></span>
+
+    <section id="intro" class="section hero">
+      <div class="halftone halftone-hero" aria-hidden="true"></div>
+      <div class="reveal">
+        <p class="status-line"><span class="status-dot"></span> available for work</p>
+      </div>
+      <h1 class="reveal display-title">melfred bernabe</h1>
+      <p class="reveal hero-role">Software Engineer — building clean, fast, well-considered products.</p>
+      <p class="reveal hero-copy">
+        I design and build web applications end to end, with an eye for
+        detail that most people skip past. Currently based in the Philippines,
+        working with teams and founders who care about craft.
+      </p>
+    </section>
+
+    <section id="projects" class="section">
+      <p class="section-label">01 — projects</p>
+      <div class="project-grid">
+
+        <article class="card project-card reveal">
+          <div class="project-thumb halftone-thumb" aria-hidden="true"></div>
+          <div class="card-body">
+            <div class="card-head">
+              <h3>Project One</h3>
+              <span class="tag tag-featured">featured</span>
+            </div>
+            <p class="card-desc">A short description of what this project does and the problem it solves.</p>
+            <div class="tag-row">
+              <span class="tag">next.js</span>
+              <span class="tag">typescript</span>
+              <span class="tag">postgres</span>
+            </div>
+            <a class="card-link" href="#">view project ↗</a>
+          </div>
+        </article>
+
+        <article class="card project-card reveal">
+          <div class="project-thumb halftone-thumb" aria-hidden="true"></div>
+          <div class="card-body">
+            <div class="card-head">
+              <h3>Project Two</h3>
+            </div>
+            <p class="card-desc">A short description of what this project does and the problem it solves.</p>
+            <div class="tag-row">
+              <span class="tag">react</span>
+              <span class="tag">node</span>
+            </div>
+            <a class="card-link" href="#">view project ↗</a>
+          </div>
+        </article>
+
+        <article class="card project-card reveal">
+          <div class="project-thumb halftone-thumb" aria-hidden="true"></div>
+          <div class="card-body">
+            <div class="card-head">
+              <h3>Project Three</h3>
+            </div>
+            <p class="card-desc">A short description of what this project does and the problem it solves.</p>
+            <div class="tag-row">
+              <span class="tag">python</span>
+              <span class="tag">ml</span>
+            </div>
+            <a class="card-link" href="#">view project ↗</a>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <p class="section-label">02 — about</p>
+      <div class="about-grid reveal">
+        <div class="about-copy">
+          <p>
+            I'm a software engineer who cares more about the last 10% of a
+            product than the first 90%. I've spent my career moving between
+            frontend and backend, but the common thread is always the same:
+            make it fast, make it clear, remove what doesn't need to be there.
+          </p>
+          <p>
+            Outside of client work, I like picking apart design systems,
+            reading about typography, and rebuilding the same landing page
+            in five different aesthetics just to see which one sticks.
+          </p>
+        </div>
+        <div class="stat-grid">
+          <div class="stat-cell">
+            <p class="stat-value">5+</p>
+            <p class="stat-label">years building</p>
+          </div>
+          <div class="stat-cell">
+            <p class="stat-value">20+</p>
+            <p class="stat-label">projects shipped</p>
+          </div>
+          <div class="stat-cell">
+            <p class="stat-value">PH</p>
+            <p class="stat-label">based in</p>
+          </div>
+          <div class="stat-cell">
+            <p class="stat-value">open</p>
+            <p class="stat-label">to work</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact-section">
+      <p class="section-label">03 — contact</p>
+      <div class="reveal">
+        <h2 class="contact-title">let's talk</h2>
+        <p class="contact-copy">
+          The fastest way to reach me is email. I usually reply within a day.
+        </p>
+        <a class="button-primary" href="mailto:melfredbernabe7@gmail.com">say hello ↗</a>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p>© 2026 Melfred Bernabe</p>
+      <ul class="mono-list footer-links">
+        <li><a href="mailto:melfredbernabe7@gmail.com">email ↗</a></li>
+        <li><a href="https://github.com" target="_blank" rel="noopener">github ↗</a></li>
+        <li><a href="https://linkedin.com" target="_blank" rel="noopener">linkedin ↗</a></li>
+      </ul>
+    </footer>
+  </main>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
