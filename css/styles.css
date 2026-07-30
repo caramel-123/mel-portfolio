@@ -454,6 +454,100 @@ main {
   border: none;
 }
 
+@media (min-width: 900px) {
+  .project-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+/* experience */
+
+.timeline {
+  display: flex;
+  flex-direction: column;
+}
+
+.timeline-item {
+  padding: 1.75rem 0;
+  border-bottom: 1px solid var(--gray-200);
+}
+.timeline-item:first-child { padding-top: 0; }
+.timeline-item:last-child { border-bottom: none; padding-bottom: 0; }
+
+.timeline-head {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 0.5rem 1rem;
+  margin-bottom: 0.6rem;
+}
+
+.timeline-role {
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  margin: 0;
+}
+.timeline-org { color: var(--gray-500); font-weight: 400; }
+
+.timeline-meta {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--gray-400);
+  white-space: nowrap;
+}
+
+.timeline-list {
+  margin: 0.5rem 0 0;
+  padding-left: 1.1rem;
+  color: var(--gray-600);
+  font-size: 0.9rem;
+}
+.timeline-list li + li { margin-top: 0.35rem; }
+
+/* stack */
+
+.stack-group { margin-bottom: 1.75rem; }
+.stack-group:last-child { margin-bottom: 0; }
+
+.stack-group-label {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--gray-400);
+  margin: 0 0 0.75rem;
+}
+
+/* certifications */
+
+.cert-list {
+  border-top: 1px solid var(--gray-200);
+}
+
+.cert-item {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 0.4rem 1rem;
+  padding: 1rem 0;
+  border-bottom: 1px solid var(--gray-200);
+}
+
+.cert-name { font-weight: 600; font-size: 0.95rem; }
+.cert-issuer { color: var(--gray-500); font-weight: 400; font-size: 0.9rem; }
+
+.cert-date {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--gray-400);
+  white-space: nowrap;
+}
+
 /* about */
 
 .about-grid {
@@ -546,7 +640,8 @@ main {
 
 .footer-links {
   display: flex;
-  gap: 1.5rem;
+  flex-wrap: wrap;
+  gap: 0.75rem 1.5rem;
 }
 .footer-links li + li { margin-top: 0; }
 
