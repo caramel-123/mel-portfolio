@@ -58,13 +58,13 @@
 
   <nav class="sidebar" aria-label="Primary">
     <div class="sidebar-top">
-      <a class="brand" href="#top">Melfred</a>
+      <a class="brand" href="#home" data-nav="home">Melfred</a>
       <ul class="nav-list">
-        <li><a href="#projects" class="nav-link" data-nav>projects</a></li>
-        <li><a href="#experience" class="nav-link" data-nav>experience</a></li>
-        <li><a href="#stack" class="nav-link" data-nav>stack</a></li>
-        <li><a href="#certifications" class="nav-link" data-nav>certifications</a></li>
-        <li><a href="#contact" class="nav-link" data-nav>contact</a></li>
+        <li><a href="#projects" class="nav-link" data-nav="projects">projects</a></li>
+        <li><a href="#experience" class="nav-link" data-nav="experience">experience</a></li>
+        <li><a href="#stack" class="nav-link" data-nav="stack">stack</a></li>
+        <li><a href="#certifications" class="nav-link" data-nav="certifications">certifications</a></li>
+        <li><a href="#contact" class="nav-link" data-nav="contact">contact</a></li>
       </ul>
     </div>
     <div class="sidebar-bottom">
@@ -81,17 +81,6 @@
         </button>
       </div>
 
-      <ul class="nav-list mono-list">
-        <li><a href="mailto:melfredbernabe7@gmail.com" class="social-link" aria-label="Email"><svg class="social-icon" aria-hidden="true"><use href="#icon-mail"></use></svg></a></li>
-        <li><a href="https://github.com/caramel-123" class="social-link" target="_blank" rel="noopener" aria-label="GitHub"><svg class="social-icon" aria-hidden="true"><use href="#icon-github"></use></svg></a></li>
-        <li><a href="https://www.linkedin.com/in/melfred-bernabe-869ba4360/" class="social-link" target="_blank" rel="noopener" aria-label="LinkedIn"><svg class="social-icon" aria-hidden="true"><use href="#icon-linkedin"></use></svg></a></li>
-        <li><a href="https://x.com/Bukopie_nice" class="social-link" target="_blank" rel="noopener" aria-label="X (Twitter)"><svg class="social-icon" aria-hidden="true"><use href="#icon-x"></use></svg></a></li>
-        <li><a href="https://www.facebook.com/melfred.bernabe.2024" class="social-link" target="_blank" rel="noopener" aria-label="Facebook"><svg class="social-icon" aria-hidden="true"><use href="#icon-facebook"></use></svg></a></li>
-        <li><a href="https://www.youtube.com/@melfredbernabe-i5v" class="social-link" target="_blank" rel="noopener" aria-label="YouTube"><svg class="social-icon" aria-hidden="true"><use href="#icon-youtube"></use></svg></a></li>
-        <li><a href="https://discord.com/users/1398660390107484230" class="social-link" target="_blank" rel="noopener" aria-label="Discord"><svg class="social-icon" aria-hidden="true"><use href="#icon-discord"></use></svg></a></li>
-        <li><a href="https://t.me/melfredbernabe7" class="social-link" target="_blank" rel="noopener" aria-label="Telegram"><svg class="social-icon" aria-hidden="true"><use href="#icon-telegram"></use></svg></a></li>
-      </ul>
-
       <div class="theme-toggle-group" role="group" aria-label="Theme">
         <button class="theme-icon-btn" data-theme-choice="system" aria-label="System theme">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="15" height="15" aria-hidden="true"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
@@ -103,11 +92,18 @@
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="15" height="15" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
         </button>
       </div>
+
+      <div class="contact-highlight">
+        <a class="contact-highlight-email" href="mailto:melfredbernabe7@gmail.com">
+          <svg class="social-icon" aria-hidden="true"><use href="#icon-mail"></use></svg>
+          melfredbernabe7@gmail.com
+        </a>
+      </div>
     </div>
   </nav>
 
   <header class="topbar" id="topbar">
-    <a class="brand" href="#top">Melfred</a>
+    <a class="brand" href="#home" data-nav="home">Melfred</a>
     <button class="menu-toggle" id="menu-toggle" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu">
       <span></span><span></span><span></span>
     </button>
@@ -115,11 +111,11 @@
 
   <div class="mobile-menu" id="mobile-menu">
     <ul class="nav-list">
-      <li><a href="#projects" data-nav>projects</a></li>
-      <li><a href="#experience" data-nav>experience</a></li>
-      <li><a href="#stack" data-nav>stack</a></li>
-      <li><a href="#certifications" data-nav>certifications</a></li>
-      <li><a href="#contact" data-nav>contact</a></li>
+      <li><a href="#projects" data-nav="projects">projects</a></li>
+      <li><a href="#experience" data-nav="experience">experience</a></li>
+      <li><a href="#stack" data-nav="stack">stack</a></li>
+      <li><a href="#certifications" data-nav="certifications">certifications</a></li>
+      <li><a href="#contact" data-nav="contact">contact</a></li>
     </ul>
 
     <button class="cmdk-trigger" id="cmdk-trigger-mobile" type="button">
@@ -135,17 +131,6 @@
       </button>
     </div>
 
-    <ul class="nav-list mono-list">
-      <li><a href="mailto:melfredbernabe7@gmail.com" class="social-link" aria-label="Email"><svg class="social-icon" aria-hidden="true"><use href="#icon-mail"></use></svg></a></li>
-      <li><a href="https://github.com/caramel-123" class="social-link" target="_blank" rel="noopener" aria-label="GitHub"><svg class="social-icon" aria-hidden="true"><use href="#icon-github"></use></svg></a></li>
-      <li><a href="https://www.linkedin.com/in/melfred-bernabe-869ba4360/" class="social-link" target="_blank" rel="noopener" aria-label="LinkedIn"><svg class="social-icon" aria-hidden="true"><use href="#icon-linkedin"></use></svg></a></li>
-      <li><a href="https://x.com/Bukopie_nice" class="social-link" target="_blank" rel="noopener" aria-label="X (Twitter)"><svg class="social-icon" aria-hidden="true"><use href="#icon-x"></use></svg></a></li>
-      <li><a href="https://www.facebook.com/melfred.bernabe.2024" class="social-link" target="_blank" rel="noopener" aria-label="Facebook"><svg class="social-icon" aria-hidden="true"><use href="#icon-facebook"></use></svg></a></li>
-      <li><a href="https://www.youtube.com/@melfredbernabe-i5v" class="social-link" target="_blank" rel="noopener" aria-label="YouTube"><svg class="social-icon" aria-hidden="true"><use href="#icon-youtube"></use></svg></a></li>
-      <li><a href="https://discord.com/users/1398660390107484230" class="social-link" target="_blank" rel="noopener" aria-label="Discord"><svg class="social-icon" aria-hidden="true"><use href="#icon-discord"></use></svg></a></li>
-      <li><a href="https://t.me/melfredbernabe7" class="social-link" target="_blank" rel="noopener" aria-label="Telegram"><svg class="social-icon" aria-hidden="true"><use href="#icon-telegram"></use></svg></a></li>
-    </ul>
-
     <div class="theme-toggle-group" role="group" aria-label="Theme">
       <button class="theme-icon-btn" data-theme-choice="system" aria-label="System theme">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="15" height="15" aria-hidden="true"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
@@ -157,669 +142,941 @@
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="15" height="15" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
       </button>
     </div>
+
+    <div class="contact-highlight">
+      <a class="contact-highlight-email" href="mailto:melfredbernabe7@gmail.com">
+        <svg class="social-icon" aria-hidden="true"><use href="#icon-mail"></use></svg>
+        melfredbernabe7@gmail.com
+      </a>
+    </div>
   </div>
 
   <main id="main">
     <span id="top"></span>
 
-    <section id="intro" class="section hero">
-      <div class="halftone halftone-hero" aria-hidden="true"></div>
-      <div class="hero-grid">
-        <div class="hero-photo-wrap reveal">
-          <img class="hero-photo" src="images/profile.jpg" alt="Portrait of Melfred Bernabe" width="800" height="800" />
+    <div class="tab-panel" data-tab="home" id="tab-home">
+
+      <section id="intro" class="section hero">
+        <div class="halftone halftone-hero" aria-hidden="true"></div>
+        <div class="hero-grid">
+          <div class="hero-photo-wrap reveal">
+            <img class="hero-photo" src="images/profile.jpg" alt="Portrait of Melfred Bernabe" width="800" height="800" />
+          </div>
+          <div class="hero-text">
+            <div class="reveal">
+              <p class="status-line"><span class="status-dot"></span> available for work</p>
+            </div>
+            <h1 class="reveal display-title">melfred bernabe</h1>
+            <p class="reveal hero-role">Full-stack builder, shipping AI, cloud, and blockchain products end to end.</p>
+            <p class="reveal hero-copy">
+              I'm a Computer Science student (Cloud Computing) at PUP, and I spend most
+              of my time turning rough ideas into things people can actually use, from
+              climate-tech platforms to decentralized micro-lending apps, usually built
+              solo or with a small team during hackathons. Based in Antipolo, Philippines.
+            </p>
+          </div>
         </div>
-        <div class="hero-text">
-          <div class="reveal">
-            <p class="status-line"><span class="status-dot"></span> available for work</p>
-          </div>
-          <h1 class="reveal display-title">melfred bernabe</h1>
-          <p class="reveal hero-role">Full-stack builder — shipping AI, cloud, and blockchain products end to end.</p>
-          <p class="reveal hero-copy">
-            I'm a Computer Science student (Cloud Computing) at PUP, and I spend most
-            of my time turning rough ideas into things people can actually use — from
-            climate-tech platforms to decentralized micro-lending apps, usually built
-            solo or with a small team during hackathons. Based in Antipolo, Philippines.
-          </p>
+      </section>
+
+      <section id="home-projects" class="section">
+        <div class="section-head">
+          <p class="section-label">01 — projects</p>
+          <button class="section-toggle" data-goto-tab="projects" type="button">view all <span class="section-toggle-count">(11)</span> →</button>
         </div>
-      </div>
-    </section>
+        <div class="project-grid">
 
-    <section id="projects" class="section">
-      <div class="section-head">
-        <p class="section-label">01 — projects</p>
-        <button class="section-toggle" data-toggle-target="project-grid" type="button">view all <span class="section-toggle-count">(11)</span> →</button>
-      </div>
-      <div class="project-grid" id="project-grid">
-
-        <article class="card project-card reveal">
-          <div class="project-thumb halftone-thumb" aria-hidden="true"></div>
-          <div class="card-body">
-            <div class="card-head">
-              <h3>SkillSeed</h3>
-              <span class="tag tag-featured">featured</span>
+          <article class="card project-card reveal">
+            <div class="project-thumb halftone-thumb" aria-hidden="true"></div>
+            <div class="card-body">
+              <div class="card-head">
+                <h3>SkillSeed</h3>
+                <span class="tag tag-featured">featured</span>
+              </div>
+              <p class="card-desc">A full-stack climate participation platform. Users complete missions, join community challenges, take quests, and access funding opportunities.</p>
+              <div class="tag-row">
+                <span class="tag">react</span>
+                <span class="tag">typescript</span>
+                <span class="tag">supabase</span>
+                <span class="tag">tailwind</span>
+              </div>
+              <a class="card-link" href="https://skill-seed-climate-learning-website.vercel.app/" target="_blank" rel="noopener">view project ↗</a>
             </div>
-            <p class="card-desc">A full-stack climate participation platform — users complete missions, join community challenges, take quests, and access funding opportunities.</p>
+          </article>
+
+          <article class="card project-card reveal">
+            <div class="project-thumb halftone-thumb" aria-hidden="true"></div>
+            <div class="card-body">
+              <div class="card-head">
+                <h3>Bankero</h3>
+                <span class="tag tag-featured">featured</span>
+              </div>
+              <p class="card-desc">Decentralized credit scoring and micro-lending on Stellar that gives unbanked Filipinos a verifiable, on-chain financial identity based on real behavior, not a bank balance.</p>
+              <div class="tag-row">
+                <span class="tag">stellar</span>
+                <span class="tag">soroban</span>
+                <span class="tag">credit scoring</span>
+              </div>
+              <a class="card-link" href="https://bankero.vercel.app" target="_blank" rel="noopener">view project ↗</a>
+            </div>
+          </article>
+
+          <article class="card project-card reveal">
+            <div class="project-thumb halftone-thumb" aria-hidden="true"></div>
+            <div class="card-body">
+              <div class="card-head">
+                <h3>Dunong</h3>
+                <span class="tag tag-featured">featured</span>
+              </div>
+              <p class="card-desc">An AI recitation coach for Filipino students. Scan a printed module, explain it out loud in Filipino, English, or code-switched, and get scored on accuracy, clarity, and confidence to build real speaking skills, not just a grade.</p>
+              <div class="tag-row">
+                <span class="tag">react</span>
+                <span class="tag">typescript</span>
+                <span class="tag">express</span>
+                <span class="tag">groq</span>
+              </div>
+              <a class="card-link" href="https://dunong-pinoy.vercel.app/" target="_blank" rel="noopener">view project ↗</a>
+            </div>
+          </article>
+
+        </div>
+      </section>
+
+      <section id="home-experience" class="section">
+        <div class="section-head">
+          <p class="section-label">02 — experience</p>
+          <button class="section-toggle" data-goto-tab="experience" type="button">full history <span class="section-toggle-count">(8)</span> →</button>
+        </div>
+        <div class="timeline">
+
+          <div class="timeline-item reveal">
+            <div class="timeline-head">
+              <h3 class="timeline-role">Machine Learning Intern <span class="timeline-org">@ Flyrank</span></h3>
+              <span class="timeline-meta">Jun 2026 — Present · Manila</span>
+            </div>
+            <ul class="timeline-list">
+              <li>Building a real predictive model on real data as part of the Machine Learning track.</li>
+              <li>Completing the AI Fluency track alongside a specialization capstone.</li>
+              <li>Working on AI Marketing: GTM campaigns that start on the web and travel to every platform.</li>
+            </ul>
+          </div>
+
+          <div class="timeline-item reveal">
+            <div class="timeline-head">
+              <h3 class="timeline-role">Co-Founder &amp; Chief Experience Officer <span class="timeline-org">@ Listo</span></h3>
+              <span class="timeline-meta">Mar 2026 — Present · Pasig, Manila</span>
+            </div>
+            <ul class="timeline-list">
+              <li>Co-founded Listo (formerly SkillSeed), a climate participation platform for missions, community challenges, quests, and funding opportunities.</li>
+              <li>Own the full product experience, UX flows, and UI design across missions, community, and funding.</li>
+              <li>Drive product feel and structure from early-stage beta through official launch.</li>
+            </ul>
+          </div>
+
+          <div class="timeline-item reveal">
+            <div class="timeline-head">
+              <h3 class="timeline-role">WorkFlow PH <span class="timeline-org">Community Member</span></h3>
+              <span class="timeline-meta">Feb 2026 — Present · Sta Mesa, Manila</span>
+            </div>
+            <ul class="timeline-list">
+              <li>Learning workflow automation using Zapier, n8n, and UiPath.</li>
+            </ul>
+          </div>
+
+          <div class="timeline-item reveal">
+            <div class="timeline-head">
+              <h3 class="timeline-role">CyberSecurity Cadet <span class="timeline-org">@ Google Developer Groups</span></h3>
+              <span class="timeline-meta">Feb 2026 · Sta Mesa, Manila</span>
+            </div>
+            <ul class="timeline-list">
+              <li>Studying cybersecurity fundamentals and penetration testing.</li>
+              <li>Working with the CIA triad: confidentiality, integrity, and availability.</li>
+              <li>Learning to identify and prevent prompt injection attacks.</li>
+            </ul>
+          </div>
+
+        </div>
+      </section>
+
+      <section id="home-stack" class="section">
+        <div class="section-head">
+          <p class="section-label">03 — stack</p>
+          <button class="section-toggle" data-goto-tab="stack" type="button">view all →</button>
+        </div>
+        <div class="reveal">
+
+          <div class="stack-group">
+            <p class="stack-group-label">Languages</p>
             <div class="tag-row">
-              <span class="tag">react</span>
+              <span class="tag">c</span>
+              <span class="tag">c++</span>
+              <span class="tag">html5</span>
+              <span class="tag">css3</span>
+              <span class="tag">javascript</span>
               <span class="tag">typescript</span>
-              <span class="tag">supabase</span>
-              <span class="tag">tailwind</span>
-            </div>
-            <a class="card-link" href="https://skill-seed-climate-learning-website.vercel.app/" target="_blank" rel="noopener">view project ↗</a>
-          </div>
-        </article>
-
-        <article class="card project-card reveal">
-          <div class="project-thumb halftone-thumb" aria-hidden="true"></div>
-          <div class="card-body">
-            <div class="card-head">
-              <h3>Bankero</h3>
-              <span class="tag tag-featured">featured</span>
-            </div>
-            <p class="card-desc">Decentralized credit scoring and micro-lending on Stellar — gives unbanked Filipinos a verifiable, on-chain financial identity based on real behavior, not a bank balance.</p>
-            <div class="tag-row">
-              <span class="tag">stellar</span>
-              <span class="tag">soroban</span>
-              <span class="tag">credit scoring</span>
-            </div>
-            <a class="card-link" href="https://bankero.vercel.app" target="_blank" rel="noopener">view project ↗</a>
-          </div>
-        </article>
-
-        <article class="card project-card reveal">
-          <div class="project-thumb halftone-thumb" aria-hidden="true"></div>
-          <div class="card-body">
-            <div class="card-head">
-              <h3>Dunong</h3>
-              <span class="tag tag-featured">featured</span>
-            </div>
-            <p class="card-desc">An AI recitation coach for Filipino students. Scan a printed module, explain it out loud in Filipino, English, or code-switched, and get scored on accuracy, clarity, and confidence to build real speaking skills, not just a grade.</p>
-            <div class="tag-row">
-              <span class="tag">react</span>
-              <span class="tag">typescript</span>
-              <span class="tag">express</span>
-              <span class="tag">groq</span>
-            </div>
-            <a class="card-link" href="https://dunong-pinoy.vercel.app/" target="_blank" rel="noopener">view project ↗</a>
-          </div>
-        </article>
-
-        <article class="card project-card reveal">
-          <div class="project-thumb halftone-thumb" aria-hidden="true"></div>
-          <div class="card-body">
-            <div class="card-head">
-              <h3>Tiles</h3>
-            </div>
-            <p class="card-desc">A browser-based, Ludo-style board race game. Pick from 12 animal characters, roll dice across varied board layouts, and use powerup tiles and character ultimates to knock rivals off course before anyone reaches FINISH, solo against bots or online with friends.</p>
-            <div class="tag-row">
-              <span class="tag">react</span>
-              <span class="tag">typescript</span>
-              <span class="tag">tailwind</span>
-              <span class="tag">firebase</span>
-            </div>
-            <a class="card-link" href="https://tiles-ashen.vercel.app/" target="_blank" rel="noopener">view project ↗</a>
-          </div>
-        </article>
-
-        <article class="card project-card reveal">
-          <div class="project-thumb halftone-thumb" aria-hidden="true"></div>
-          <div class="card-body">
-            <div class="card-head">
-              <h3>BalikBayan</h3>
-            </div>
-            <p class="card-desc">An OFW conditional remittance and NFT legacy platform on Stellar. Money locks in a Soroban escrow tagged to a bill, releases only once the family submits AI-verified proof of payment, and every fulfilled promise mints a collectible NFT that unlocks real merchant discounts.</p>
-            <div class="tag-row">
-              <span class="tag">react</span>
-              <span class="tag">typescript</span>
-              <span class="tag">stellar</span>
-              <span class="tag">soroban</span>
-            </div>
-            <a class="card-link" href="https://balikbayan2-stellar-fx61.vercel.app/" target="_blank" rel="noopener">view project ↗</a>
-          </div>
-        </article>
-
-        <article class="card project-card reveal">
-          <div class="project-thumb halftone-thumb" aria-hidden="true"></div>
-          <div class="card-body">
-            <div class="card-head">
-              <h3>TALA</h3>
-            </div>
-            <p class="card-desc">A planning intelligence dashboard for DOST-SEI's STAR Program, ranking underserved regions and surfacing teacher-support interventions through an Integrate–Diagnose–Advise framework.</p>
-            <div class="tag-row">
-              <span class="tag">react</span>
-              <span class="tag">data viz</span>
-              <span class="tag">dost-sei</span>
-            </div>
-            <a class="card-link" href="https://tala-project-start.vercel.app/" target="_blank" rel="noopener">view project ↗</a>
-          </div>
-        </article>
-
-        <article class="card project-card reveal" hidden>
-          <div class="project-thumb halftone-thumb" aria-hidden="true"></div>
-          <div class="card-body">
-            <div class="card-head">
-              <h3>MyClient</h3>
-            </div>
-            <p class="card-desc">An AI-powered client simulation platform for student freelancers — practice the full freelance lifecycle through realistic AI client conversations powered by Gemini.</p>
-            <div class="tag-row">
-              <span class="tag">react</span>
-              <span class="tag">gemini</span>
-              <span class="tag">firebase</span>
-            </div>
-            <a class="card-link" href="https://myclient-sparkfest.web.app" target="_blank" rel="noopener">view project ↗</a>
-          </div>
-        </article>
-
-        <article class="card project-card reveal" hidden>
-          <div class="project-thumb halftone-thumb" aria-hidden="true"></div>
-          <div class="card-body">
-            <div class="card-head">
-              <h3>eSumbong</h3>
-            </div>
-            <p class="card-desc">A civic verification PWA that checks government infrastructure project claims against citizen-submitted photo evidence, flagging discrepancies automatically.</p>
-            <div class="tag-row">
-              <span class="tag">next.js</span>
-              <span class="tag">prisma</span>
-              <span class="tag">postgresql</span>
-            </div>
-            <a class="card-link" href="https://esumbong-pwa.vercel.app/" target="_blank" rel="noopener">view project ↗</a>
-          </div>
-        </article>
-
-        <article class="card project-card reveal" hidden>
-          <div class="project-thumb halftone-thumb" aria-hidden="true"></div>
-          <div class="card-body">
-            <div class="card-head">
-              <h3>Riles</h3>
-            </div>
-            <p class="card-desc">An Android app that monitors your commute on PH LRT/MRT lines and announces your stop out loud as you arrive, so you don't miss it.</p>
-            <div class="tag-row">
+              <span class="tag">python</span>
+              <span class="tag">solidity</span>
               <span class="tag">kotlin</span>
-              <span class="tag">jetpack compose</span>
-              <span class="tag">android</span>
+              <span class="tag">rust</span>
             </div>
-            <a class="card-link" href="https://github.com/caramel-123/trenenen_project_cursor" target="_blank" rel="noopener">view project ↗</a>
           </div>
-        </article>
 
-        <article class="card project-card reveal" hidden>
-          <div class="project-thumb halftone-thumb" aria-hidden="true"></div>
-          <div class="card-body">
-            <div class="card-head">
-              <h3>Lista</h3>
-            </div>
-            <p class="card-desc">An AI-powered productivity app that turns natural language into structured tasks. Type "finish the UI prototype tomorrow" and it extracts the task name, due date, category, and assignee, then syncs everything in real time across shared spaces.</p>
+          <div class="stack-group">
+            <p class="stack-group-label">Frontend</p>
             <div class="tag-row">
               <span class="tag">react</span>
-              <span class="tag">tailwind</span>
+              <span class="tag">react router</span>
+              <span class="tag">react native</span>
+              <span class="tag">react query</span>
+              <span class="tag">next.js</span>
+              <span class="tag">vite</span>
+              <span class="tag">tailwind css</span>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <section id="home-certifications" class="section">
+        <div class="section-head">
+          <p class="section-label">04 — certifications</p>
+          <button class="section-toggle" data-goto-tab="certifications" type="button">all certifications <span class="section-toggle-count">(5)</span> →</button>
+        </div>
+        <div class="cert-list reveal">
+
+          <div class="cert-item">
+            <a class="cert-thumb-link" href="images/certificates/aws-ai-practitioner.jpg" target="_blank" rel="noopener">
+              <img class="cert-thumb" src="images/certificates/aws-ai-practitioner.jpg" alt="AWS Certified AI Practitioner certificate" loading="lazy" />
+            </a>
+            <div class="cert-info">
+              <div>
+                <span class="cert-name">AWS Certified AI Practitioner</span>
+                <span class="cert-issuer"> — AWS</span>
+              </div>
+              <a class="cert-date" href="https://www.credly.com/badges/04f0bfa5-e646-4d5a-86e3-a62c9045f911" target="_blank" rel="noopener">Jul 2026 ↗</a>
+            </div>
+          </div>
+
+          <div class="cert-item">
+            <a class="cert-thumb-link" href="images/certificates/ai-engineer-developers-associate.jpg" target="_blank" rel="noopener">
+              <img class="cert-thumb" src="images/certificates/ai-engineer-developers-associate.jpg" alt="AI Engineer for Developers Associate certificate" loading="lazy" />
+            </a>
+            <div class="cert-info">
+              <div>
+                <span class="cert-name">AI Engineer for Developers Associate</span>
+                <span class="cert-issuer"> — DataCamp</span>
+              </div>
+              <a class="cert-date" href="https://www.datacamp.com/certificate/AIEDA0012590208832" target="_blank" rel="noopener">Jun 2026 ↗</a>
+            </div>
+          </div>
+
+          <div class="cert-item">
+            <a class="cert-thumb-link" href="images/certificates/data-engineer-associate.jpg" target="_blank" rel="noopener">
+              <img class="cert-thumb" src="images/certificates/data-engineer-associate.jpg" alt="Data Engineer Associate certificate" loading="lazy" />
+            </a>
+            <div class="cert-info">
+              <div>
+                <span class="cert-name">Data Engineer Associate</span>
+                <span class="cert-issuer"> — DataCamp</span>
+              </div>
+              <a class="cert-date" href="https://www.datacamp.com/certificate/DEA0019116879921" target="_blank" rel="noopener">Mar 2026 ↗</a>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <section id="about" class="section">
+        <p class="section-label">05 — about</p>
+        <div class="about-grid reveal">
+          <div class="about-copy">
+            <p>
+              I'm a Computer Science student focused on Cloud Computing at PUP,
+              and I spend most of my time turning ideas into shipped products:
+              climate-tech platforms, AI simulations, decentralized lending apps,
+              usually built solo or with a small team during hackathons.
+            </p>
+            <p>
+              Outside of building, I show up to as many meetups, hackathons, and
+              tech summits as I can, anywhere I can learn from people further
+              along than me and get better at explaining what I build.
+            </p>
+          </div>
+          <div class="stat-grid">
+            <div class="stat-cell">
+              <p class="stat-value">7+</p>
+              <p class="stat-label">projects shipped</p>
+            </div>
+            <div class="stat-cell">
+              <p class="stat-value">5</p>
+              <p class="stat-label">certifications</p>
+            </div>
+            <div class="stat-cell">
+              <p class="stat-value">16+</p>
+              <p class="stat-label">hackathons</p>
+            </div>
+            <div class="stat-cell">
+              <p class="stat-value">2025</p>
+              <p class="stat-label">started coding</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="education" class="section">
+        <p class="section-label">06 — education</p>
+        <div class="education-list reveal">
+
+          <div class="education-item">
+            <div class="education-head">
+              <p class="education-school">Polytechnic University of the Philippines</p>
+              <span class="education-date">2025 — Present · Sta Mesa, Manila</span>
+            </div>
+            <div class="education-sub">
+              <p class="education-detail">BS Computer Science, major in Cloud Computing</p>
+            </div>
+          </div>
+
+          <div class="education-item">
+            <div class="education-head">
+              <p class="education-school">Antipolo City Senior High School</p>
+              <span class="education-date">2023 — 2025 · Sta Cruz, Antipolo City</span>
+            </div>
+            <div class="education-sub">
+              <p class="education-detail">STEM · With High Honors</p>
+            </div>
+          </div>
+
+          <div class="education-item">
+            <div class="education-head">
+              <p class="education-school">Antipolo National High School</p>
+              <span class="education-date">2019 — 2023 · Sta Cruz, Antipolo City</span>
+            </div>
+            <div class="education-sub">
+              <span class="education-honors">With Honors</span>
+            </div>
+          </div>
+
+          <div class="education-item">
+            <div class="education-head">
+              <p class="education-school">Sta Cruz Elementary School</p>
+              <span class="education-date">2013 — 2019 · Sta Cruz, Antipolo City</span>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <section id="badges" class="section">
+        <p class="section-label">07 — badges</p>
+        <div class="badge-grid reveal">
+
+          <a class="badge-item" href="https://www.credly.com/badges/04f0bfa5-e646-4d5a-86e3-a62c9045f911" target="_blank" rel="noopener">
+            <img src="images/badges/aws-ai-practitioner.png" alt="AWS Certified AI Practitioner badge" loading="lazy" />
+            <span class="badge-label">AWS AI Practitioner</span>
+          </a>
+
+          <a class="badge-item" href="https://www.datacamp.com/certificate/AIEDA0012590208832" target="_blank" rel="noopener">
+            <img src="images/badges/ai-engineer-developers-associate.png" alt="AI Engineer for Developers Associate badge" loading="lazy" />
+            <span class="badge-label">AI Engineer for Developers</span>
+          </a>
+
+          <a class="badge-item" href="https://www.datacamp.com/certificate/DEA0019116879921" target="_blank" rel="noopener">
+            <img src="images/badges/data-engineer-associate.png" alt="Data Engineer Associate badge" loading="lazy" />
+            <span class="badge-label">Data Engineer Associate</span>
+          </a>
+
+        </div>
+      </section>
+
+      <section id="gallery" class="section">
+        <p class="section-label">08 — gallery</p>
+        <div class="gallery-viewport reveal">
+          <div class="gallery-track">
+            <a class="gallery-item" href="images/gallery/38.jpg" target="_blank" rel="noopener"><img src="images/gallery/38.jpg" alt="" loading="lazy" /></a>
+            <a class="gallery-item" href="images/gallery/37.jpg" target="_blank" rel="noopener"><img src="images/gallery/37.jpg" alt="" loading="lazy" /></a>
+            <a class="gallery-item" href="images/gallery/36.jpg" target="_blank" rel="noopener"><img src="images/gallery/36.jpg" alt="" loading="lazy" /></a>
+            <a class="gallery-item" href="images/gallery/35.jpg" target="_blank" rel="noopener"><img src="images/gallery/35.jpg" alt="" loading="lazy" /></a>
+            <a class="gallery-item" href="images/gallery/34.jpg" target="_blank" rel="noopener"><img src="images/gallery/34.jpg" alt="" loading="lazy" /></a>
+            <a class="gallery-item" href="images/gallery/33.jpg" target="_blank" rel="noopener"><img src="images/gallery/33.jpg" alt="" loading="lazy" /></a>
+            <a class="gallery-item" href="images/gallery/32.jpg" target="_blank" rel="noopener"><img src="images/gallery/32.jpg" alt="" loading="lazy" /></a>
+            <a class="gallery-item" href="images/gallery/31.jpg" target="_blank" rel="noopener"><img src="images/gallery/31.jpg" alt="" loading="lazy" /></a>
+            <a class="gallery-item" href="images/gallery/30.jpg" target="_blank" rel="noopener"><img src="images/gallery/30.jpg" alt="" loading="lazy" /></a>
+            <a class="gallery-item" href="images/gallery/29.jpg" target="_blank" rel="noopener"><img src="images/gallery/29.jpg" alt="" loading="lazy" /></a>
+            <a class="gallery-item" href="images/gallery/28.jpg" target="_blank" rel="noopener"><img src="images/gallery/28.jpg" alt="" loading="lazy" /></a>
+            <a class="gallery-item" href="images/gallery/27.jpg" target="_blank" rel="noopener"><img src="images/gallery/27.jpg" alt="" loading="lazy" /></a>
+            <a class="gallery-item" href="images/gallery/26.jpg" target="_blank" rel="noopener"><img src="images/gallery/26.jpg" alt="" loading="lazy" /></a>
+            <a class="gallery-item" href="images/gallery/25.jpg" target="_blank" rel="noopener"><img src="images/gallery/25.jpg" alt="" loading="lazy" /></a>
+            <a class="gallery-item" href="images/gallery/24.jpg" target="_blank" rel="noopener"><img src="images/gallery/24.jpg" alt="" loading="lazy" /></a>
+            <a class="gallery-item" href="images/gallery/23.jpg" target="_blank" rel="noopener"><img src="images/gallery/23.jpg" alt="" loading="lazy" /></a>
+            <a class="gallery-item" href="images/gallery/22.jpg" target="_blank" rel="noopener"><img src="images/gallery/22.jpg" alt="" loading="lazy" /></a>
+            <a class="gallery-item" href="images/gallery/21.jpg" target="_blank" rel="noopener"><img src="images/gallery/21.jpg" alt="" loading="lazy" /></a>
+            <a class="gallery-item" href="images/gallery/20.jpg" target="_blank" rel="noopener"><img src="images/gallery/20.jpg" alt="" loading="lazy" /></a>
+            <a class="gallery-item" href="images/gallery/19.jpg" target="_blank" rel="noopener"><img src="images/gallery/19.jpg" alt="" loading="lazy" /></a>
+            <a class="gallery-item" href="images/gallery/18.jpg" target="_blank" rel="noopener"><img src="images/gallery/18.jpg" alt="" loading="lazy" /></a>
+            <a class="gallery-item" href="images/gallery/17.jpg" target="_blank" rel="noopener"><img src="images/gallery/17.jpg" alt="" loading="lazy" /></a>
+            <a class="gallery-item" href="images/gallery/16.jpg" target="_blank" rel="noopener"><img src="images/gallery/16.jpg" alt="" loading="lazy" /></a>
+            <a class="gallery-item" href="images/gallery/15.jpg" target="_blank" rel="noopener"><img src="images/gallery/15.jpg" alt="" loading="lazy" /></a>
+            <a class="gallery-item" href="images/gallery/14.jpg" target="_blank" rel="noopener"><img src="images/gallery/14.jpg" alt="" loading="lazy" /></a>
+            <a class="gallery-item" href="images/gallery/13.jpg" target="_blank" rel="noopener"><img src="images/gallery/13.jpg" alt="" loading="lazy" /></a>
+            <a class="gallery-item" href="images/gallery/12.jpg" target="_blank" rel="noopener"><img src="images/gallery/12.jpg" alt="" loading="lazy" /></a>
+            <a class="gallery-item" href="images/gallery/11.jpg" target="_blank" rel="noopener"><img src="images/gallery/11.jpg" alt="" loading="lazy" /></a>
+            <a class="gallery-item" href="images/gallery/10.jpg" target="_blank" rel="noopener"><img src="images/gallery/10.jpg" alt="" loading="lazy" /></a>
+            <a class="gallery-item" href="images/gallery/09.jpg" target="_blank" rel="noopener"><img src="images/gallery/09.jpg" alt="" loading="lazy" /></a>
+            <a class="gallery-item" href="images/gallery/08.jpg" target="_blank" rel="noopener"><img src="images/gallery/08.jpg" alt="" loading="lazy" /></a>
+            <a class="gallery-item" href="images/gallery/07.jpg" target="_blank" rel="noopener"><img src="images/gallery/07.jpg" alt="" loading="lazy" /></a>
+            <a class="gallery-item" href="images/gallery/06.jpg" target="_blank" rel="noopener"><img src="images/gallery/06.jpg" alt="" loading="lazy" /></a>
+            <a class="gallery-item" href="images/gallery/05.jpg" target="_blank" rel="noopener"><img src="images/gallery/05.jpg" alt="" loading="lazy" /></a>
+            <a class="gallery-item" href="images/gallery/04.jpg" target="_blank" rel="noopener"><img src="images/gallery/04.jpg" alt="" loading="lazy" /></a>
+            <a class="gallery-item" href="images/gallery/03.jpg" target="_blank" rel="noopener"><img src="images/gallery/03.jpg" alt="" loading="lazy" /></a>
+            <a class="gallery-item" href="images/gallery/02.jpg" target="_blank" rel="noopener"><img src="images/gallery/02.jpg" alt="" loading="lazy" /></a>
+            <a class="gallery-item" href="images/gallery/01.jpg" target="_blank" rel="noopener"><img src="images/gallery/01.jpg" alt="" loading="lazy" /></a>
+            <a class="gallery-item" href="images/gallery/38.jpg" target="_blank" rel="noopener" aria-hidden="true" tabindex="-1"><img src="images/gallery/38.jpg" alt="" loading="lazy" /></a>
+            <a class="gallery-item" href="images/gallery/37.jpg" target="_blank" rel="noopener" aria-hidden="true" tabindex="-1"><img src="images/gallery/37.jpg" alt="" loading="lazy" /></a>
+            <a class="gallery-item" href="images/gallery/36.jpg" target="_blank" rel="noopener" aria-hidden="true" tabindex="-1"><img src="images/gallery/36.jpg" alt="" loading="lazy" /></a>
+            <a class="gallery-item" href="images/gallery/35.jpg" target="_blank" rel="noopener" aria-hidden="true" tabindex="-1"><img src="images/gallery/35.jpg" alt="" loading="lazy" /></a>
+            <a class="gallery-item" href="images/gallery/34.jpg" target="_blank" rel="noopener" aria-hidden="true" tabindex="-1"><img src="images/gallery/34.jpg" alt="" loading="lazy" /></a>
+            <a class="gallery-item" href="images/gallery/33.jpg" target="_blank" rel="noopener" aria-hidden="true" tabindex="-1"><img src="images/gallery/33.jpg" alt="" loading="lazy" /></a>
+            <a class="gallery-item" href="images/gallery/32.jpg" target="_blank" rel="noopener" aria-hidden="true" tabindex="-1"><img src="images/gallery/32.jpg" alt="" loading="lazy" /></a>
+            <a class="gallery-item" href="images/gallery/31.jpg" target="_blank" rel="noopener" aria-hidden="true" tabindex="-1"><img src="images/gallery/31.jpg" alt="" loading="lazy" /></a>
+            <a class="gallery-item" href="images/gallery/30.jpg" target="_blank" rel="noopener" aria-hidden="true" tabindex="-1"><img src="images/gallery/30.jpg" alt="" loading="lazy" /></a>
+            <a class="gallery-item" href="images/gallery/29.jpg" target="_blank" rel="noopener" aria-hidden="true" tabindex="-1"><img src="images/gallery/29.jpg" alt="" loading="lazy" /></a>
+            <a class="gallery-item" href="images/gallery/28.jpg" target="_blank" rel="noopener" aria-hidden="true" tabindex="-1"><img src="images/gallery/28.jpg" alt="" loading="lazy" /></a>
+            <a class="gallery-item" href="images/gallery/27.jpg" target="_blank" rel="noopener" aria-hidden="true" tabindex="-1"><img src="images/gallery/27.jpg" alt="" loading="lazy" /></a>
+            <a class="gallery-item" href="images/gallery/26.jpg" target="_blank" rel="noopener" aria-hidden="true" tabindex="-1"><img src="images/gallery/26.jpg" alt="" loading="lazy" /></a>
+            <a class="gallery-item" href="images/gallery/25.jpg" target="_blank" rel="noopener" aria-hidden="true" tabindex="-1"><img src="images/gallery/25.jpg" alt="" loading="lazy" /></a>
+            <a class="gallery-item" href="images/gallery/24.jpg" target="_blank" rel="noopener" aria-hidden="true" tabindex="-1"><img src="images/gallery/24.jpg" alt="" loading="lazy" /></a>
+            <a class="gallery-item" href="images/gallery/23.jpg" target="_blank" rel="noopener" aria-hidden="true" tabindex="-1"><img src="images/gallery/23.jpg" alt="" loading="lazy" /></a>
+            <a class="gallery-item" href="images/gallery/22.jpg" target="_blank" rel="noopener" aria-hidden="true" tabindex="-1"><img src="images/gallery/22.jpg" alt="" loading="lazy" /></a>
+            <a class="gallery-item" href="images/gallery/21.jpg" target="_blank" rel="noopener" aria-hidden="true" tabindex="-1"><img src="images/gallery/21.jpg" alt="" loading="lazy" /></a>
+            <a class="gallery-item" href="images/gallery/20.jpg" target="_blank" rel="noopener" aria-hidden="true" tabindex="-1"><img src="images/gallery/20.jpg" alt="" loading="lazy" /></a>
+            <a class="gallery-item" href="images/gallery/19.jpg" target="_blank" rel="noopener" aria-hidden="true" tabindex="-1"><img src="images/gallery/19.jpg" alt="" loading="lazy" /></a>
+            <a class="gallery-item" href="images/gallery/18.jpg" target="_blank" rel="noopener" aria-hidden="true" tabindex="-1"><img src="images/gallery/18.jpg" alt="" loading="lazy" /></a>
+            <a class="gallery-item" href="images/gallery/17.jpg" target="_blank" rel="noopener" aria-hidden="true" tabindex="-1"><img src="images/gallery/17.jpg" alt="" loading="lazy" /></a>
+            <a class="gallery-item" href="images/gallery/16.jpg" target="_blank" rel="noopener" aria-hidden="true" tabindex="-1"><img src="images/gallery/16.jpg" alt="" loading="lazy" /></a>
+            <a class="gallery-item" href="images/gallery/15.jpg" target="_blank" rel="noopener" aria-hidden="true" tabindex="-1"><img src="images/gallery/15.jpg" alt="" loading="lazy" /></a>
+            <a class="gallery-item" href="images/gallery/14.jpg" target="_blank" rel="noopener" aria-hidden="true" tabindex="-1"><img src="images/gallery/14.jpg" alt="" loading="lazy" /></a>
+            <a class="gallery-item" href="images/gallery/13.jpg" target="_blank" rel="noopener" aria-hidden="true" tabindex="-1"><img src="images/gallery/13.jpg" alt="" loading="lazy" /></a>
+            <a class="gallery-item" href="images/gallery/12.jpg" target="_blank" rel="noopener" aria-hidden="true" tabindex="-1"><img src="images/gallery/12.jpg" alt="" loading="lazy" /></a>
+            <a class="gallery-item" href="images/gallery/11.jpg" target="_blank" rel="noopener" aria-hidden="true" tabindex="-1"><img src="images/gallery/11.jpg" alt="" loading="lazy" /></a>
+            <a class="gallery-item" href="images/gallery/10.jpg" target="_blank" rel="noopener" aria-hidden="true" tabindex="-1"><img src="images/gallery/10.jpg" alt="" loading="lazy" /></a>
+            <a class="gallery-item" href="images/gallery/09.jpg" target="_blank" rel="noopener" aria-hidden="true" tabindex="-1"><img src="images/gallery/09.jpg" alt="" loading="lazy" /></a>
+            <a class="gallery-item" href="images/gallery/08.jpg" target="_blank" rel="noopener" aria-hidden="true" tabindex="-1"><img src="images/gallery/08.jpg" alt="" loading="lazy" /></a>
+            <a class="gallery-item" href="images/gallery/07.jpg" target="_blank" rel="noopener" aria-hidden="true" tabindex="-1"><img src="images/gallery/07.jpg" alt="" loading="lazy" /></a>
+            <a class="gallery-item" href="images/gallery/06.jpg" target="_blank" rel="noopener" aria-hidden="true" tabindex="-1"><img src="images/gallery/06.jpg" alt="" loading="lazy" /></a>
+            <a class="gallery-item" href="images/gallery/05.jpg" target="_blank" rel="noopener" aria-hidden="true" tabindex="-1"><img src="images/gallery/05.jpg" alt="" loading="lazy" /></a>
+            <a class="gallery-item" href="images/gallery/04.jpg" target="_blank" rel="noopener" aria-hidden="true" tabindex="-1"><img src="images/gallery/04.jpg" alt="" loading="lazy" /></a>
+            <a class="gallery-item" href="images/gallery/03.jpg" target="_blank" rel="noopener" aria-hidden="true" tabindex="-1"><img src="images/gallery/03.jpg" alt="" loading="lazy" /></a>
+            <a class="gallery-item" href="images/gallery/02.jpg" target="_blank" rel="noopener" aria-hidden="true" tabindex="-1"><img src="images/gallery/02.jpg" alt="" loading="lazy" /></a>
+            <a class="gallery-item" href="images/gallery/01.jpg" target="_blank" rel="noopener" aria-hidden="true" tabindex="-1"><img src="images/gallery/01.jpg" alt="" loading="lazy" /></a>
+          </div>
+        </div>
+      </section>
+
+      <section id="home-contact" class="section contact-section">
+        <div class="section-head">
+          <p class="section-label">09 — contact</p>
+          <button class="section-toggle" data-goto-tab="contact" type="button">full contact →</button>
+        </div>
+        <div class="reveal">
+          <h2 class="contact-title">let's talk</h2>
+          <p class="contact-copy">
+            The fastest way to reach me is email. I usually reply within a day.
+          </p>
+          <a class="button-primary" href="mailto:melfredbernabe7@gmail.com">say hello ↗</a>
+        </div>
+      </section>
+
+    </div>
+
+    <div class="tab-panel" data-tab="projects" id="tab-projects" hidden>
+      <section id="projects" class="section">
+        <div class="section-head">
+          <p class="section-label">01 — projects</p>
+          <button class="section-toggle" data-toggle-target="project-grid" type="button">view all <span class="section-toggle-count">(11)</span> →</button>
+        </div>
+        <div class="project-grid" id="project-grid">
+
+          <article class="card project-card reveal">
+            <div class="project-thumb halftone-thumb" aria-hidden="true"></div>
+            <div class="card-body">
+              <div class="card-head">
+                <h3>SkillSeed</h3>
+                <span class="tag tag-featured">featured</span>
+              </div>
+              <p class="card-desc">A full-stack climate participation platform. Users complete missions, join community challenges, take quests, and access funding opportunities.</p>
+              <div class="tag-row">
+                <span class="tag">react</span>
+                <span class="tag">typescript</span>
+                <span class="tag">supabase</span>
+                <span class="tag">tailwind</span>
+              </div>
+              <a class="card-link" href="https://skill-seed-climate-learning-website.vercel.app/" target="_blank" rel="noopener">view project ↗</a>
+            </div>
+          </article>
+
+          <article class="card project-card reveal">
+            <div class="project-thumb halftone-thumb" aria-hidden="true"></div>
+            <div class="card-body">
+              <div class="card-head">
+                <h3>Bankero</h3>
+                <span class="tag tag-featured">featured</span>
+              </div>
+              <p class="card-desc">Decentralized credit scoring and micro-lending on Stellar that gives unbanked Filipinos a verifiable, on-chain financial identity based on real behavior, not a bank balance.</p>
+              <div class="tag-row">
+                <span class="tag">stellar</span>
+                <span class="tag">soroban</span>
+                <span class="tag">credit scoring</span>
+              </div>
+              <a class="card-link" href="https://bankero.vercel.app" target="_blank" rel="noopener">view project ↗</a>
+            </div>
+          </article>
+
+          <article class="card project-card reveal">
+            <div class="project-thumb halftone-thumb" aria-hidden="true"></div>
+            <div class="card-body">
+              <div class="card-head">
+                <h3>Dunong</h3>
+                <span class="tag tag-featured">featured</span>
+              </div>
+              <p class="card-desc">An AI recitation coach for Filipino students. Scan a printed module, explain it out loud in Filipino, English, or code-switched, and get scored on accuracy, clarity, and confidence to build real speaking skills, not just a grade.</p>
+              <div class="tag-row">
+                <span class="tag">react</span>
+                <span class="tag">typescript</span>
+                <span class="tag">express</span>
+                <span class="tag">groq</span>
+              </div>
+              <a class="card-link" href="https://dunong-pinoy.vercel.app/" target="_blank" rel="noopener">view project ↗</a>
+            </div>
+          </article>
+
+          <article class="card project-card reveal" hidden>
+            <div class="project-thumb halftone-thumb" aria-hidden="true"></div>
+            <div class="card-body">
+              <div class="card-head">
+                <h3>Tiles</h3>
+              </div>
+              <p class="card-desc">A browser-based, Ludo-style board race game. Pick from 12 animal characters, roll dice across varied board layouts, and use powerup tiles and character ultimates to knock rivals off course before anyone reaches FINISH, solo against bots or online with friends.</p>
+              <div class="tag-row">
+                <span class="tag">react</span>
+                <span class="tag">typescript</span>
+                <span class="tag">tailwind</span>
+                <span class="tag">firebase</span>
+              </div>
+              <a class="card-link" href="https://tiles-ashen.vercel.app/" target="_blank" rel="noopener">view project ↗</a>
+            </div>
+          </article>
+
+          <article class="card project-card reveal" hidden>
+            <div class="project-thumb halftone-thumb" aria-hidden="true"></div>
+            <div class="card-body">
+              <div class="card-head">
+                <h3>BalikBayan</h3>
+              </div>
+              <p class="card-desc">An OFW conditional remittance and NFT legacy platform on Stellar. Money locks in a Soroban escrow tagged to a bill, releases only once the family submits AI-verified proof of payment, and every fulfilled promise mints a collectible NFT that unlocks real merchant discounts.</p>
+              <div class="tag-row">
+                <span class="tag">react</span>
+                <span class="tag">typescript</span>
+                <span class="tag">stellar</span>
+                <span class="tag">soroban</span>
+              </div>
+              <a class="card-link" href="https://balikbayan2-stellar-fx61.vercel.app/" target="_blank" rel="noopener">view project ↗</a>
+            </div>
+          </article>
+
+          <article class="card project-card reveal" hidden>
+            <div class="project-thumb halftone-thumb" aria-hidden="true"></div>
+            <div class="card-body">
+              <div class="card-head">
+                <h3>TALA</h3>
+              </div>
+              <p class="card-desc">A planning intelligence dashboard for DOST-SEI's STAR Program, ranking underserved regions and surfacing teacher-support interventions through an Integrate–Diagnose–Advise framework.</p>
+              <div class="tag-row">
+                <span class="tag">react</span>
+                <span class="tag">data viz</span>
+                <span class="tag">dost-sei</span>
+              </div>
+              <a class="card-link" href="https://tala-project-start.vercel.app/" target="_blank" rel="noopener">view project ↗</a>
+            </div>
+          </article>
+
+          <article class="card project-card reveal" hidden>
+            <div class="project-thumb halftone-thumb" aria-hidden="true"></div>
+            <div class="card-body">
+              <div class="card-head">
+                <h3>MyClient</h3>
+              </div>
+              <p class="card-desc">An AI-powered client simulation platform for student freelancers. Practice the full freelance lifecycle through realistic AI client conversations powered by Gemini.</p>
+              <div class="tag-row">
+                <span class="tag">react</span>
+                <span class="tag">gemini</span>
+                <span class="tag">firebase</span>
+              </div>
+              <a class="card-link" href="https://myclient-sparkfest.web.app" target="_blank" rel="noopener">view project ↗</a>
+            </div>
+          </article>
+
+          <article class="card project-card reveal" hidden>
+            <div class="project-thumb halftone-thumb" aria-hidden="true"></div>
+            <div class="card-body">
+              <div class="card-head">
+                <h3>eSumbong</h3>
+              </div>
+              <p class="card-desc">A civic verification PWA that checks government infrastructure project claims against citizen-submitted photo evidence, flagging discrepancies automatically.</p>
+              <div class="tag-row">
+                <span class="tag">next.js</span>
+                <span class="tag">prisma</span>
+                <span class="tag">postgresql</span>
+              </div>
+              <a class="card-link" href="https://esumbong-pwa.vercel.app/" target="_blank" rel="noopener">view project ↗</a>
+            </div>
+          </article>
+
+          <article class="card project-card reveal" hidden>
+            <div class="project-thumb halftone-thumb" aria-hidden="true"></div>
+            <div class="card-body">
+              <div class="card-head">
+                <h3>Riles</h3>
+              </div>
+              <p class="card-desc">An Android app that monitors your commute on PH LRT/MRT lines and announces your stop out loud as you arrive, so you don't miss it.</p>
+              <div class="tag-row">
+                <span class="tag">kotlin</span>
+                <span class="tag">jetpack compose</span>
+                <span class="tag">android</span>
+              </div>
+              <a class="card-link" href="https://github.com/caramel-123/trenenen_project_cursor" target="_blank" rel="noopener">view project ↗</a>
+            </div>
+          </article>
+
+          <article class="card project-card reveal" hidden>
+            <div class="project-thumb halftone-thumb" aria-hidden="true"></div>
+            <div class="card-body">
+              <div class="card-head">
+                <h3>Lista</h3>
+              </div>
+              <p class="card-desc">An AI-powered productivity app that turns natural language into structured tasks. Type "finish the UI prototype tomorrow" and it extracts the task name, due date, category, and assignee, then syncs everything in real time across shared spaces.</p>
+              <div class="tag-row">
+                <span class="tag">react</span>
+                <span class="tag">tailwind</span>
+                <span class="tag">supabase</span>
+                <span class="tag">ollama</span>
+              </div>
+              <a class="card-link" href="https://lista-orpin.vercel.app/" target="_blank" rel="noopener">view project ↗</a>
+            </div>
+          </article>
+
+          <article class="card project-card reveal" hidden>
+            <div class="project-thumb halftone-thumb" aria-hidden="true"></div>
+            <div class="card-body">
+              <div class="card-head">
+                <h3>LINGAP</h3>
+              </div>
+              <p class="card-desc">A transparent donation platform using Soroban smart contracts to turn donation drives into verified, milestone-based aid campaigns. Funds are only released when progress is proven.</p>
+              <div class="tag-row">
+                <span class="tag">next.js</span>
+                <span class="tag">python</span>
+                <span class="tag">soroban</span>
+              </div>
+              <a class="card-link" href="https://lingap-ledger.vercel.app/community" target="_blank" rel="noopener">view project ↗</a>
+            </div>
+          </article>
+
+        </div>
+      </section>
+    </div>
+
+    <div class="tab-panel" data-tab="experience" id="tab-experience" hidden>
+      <section id="experience" class="section">
+        <div class="section-head">
+          <p class="section-label">01 — experience</p>
+          <button class="section-toggle" data-toggle-target="timeline" type="button">full history <span class="section-toggle-count">(8)</span> →</button>
+        </div>
+        <div class="timeline" id="timeline">
+
+          <div class="timeline-item reveal">
+            <div class="timeline-head">
+              <h3 class="timeline-role">Machine Learning Intern <span class="timeline-org">@ Flyrank</span></h3>
+              <span class="timeline-meta">Jun 2026 — Present · Manila</span>
+            </div>
+            <ul class="timeline-list">
+              <li>Building a real predictive model on real data as part of the Machine Learning track.</li>
+              <li>Completing the AI Fluency track alongside a specialization capstone.</li>
+              <li>Working on AI Marketing: GTM campaigns that start on the web and travel to every platform.</li>
+            </ul>
+          </div>
+
+          <div class="timeline-item reveal">
+            <div class="timeline-head">
+              <h3 class="timeline-role">Co-Founder &amp; Chief Experience Officer <span class="timeline-org">@ Listo</span></h3>
+              <span class="timeline-meta">Mar 2026 — Present · Pasig, Manila</span>
+            </div>
+            <ul class="timeline-list">
+              <li>Co-founded Listo (formerly SkillSeed), a climate participation platform for missions, community challenges, quests, and funding opportunities.</li>
+              <li>Own the full product experience, UX flows, and UI design across missions, community, and funding.</li>
+              <li>Drive product feel and structure from early-stage beta through official launch.</li>
+            </ul>
+          </div>
+
+          <div class="timeline-item reveal">
+            <div class="timeline-head">
+              <h3 class="timeline-role">WorkFlow PH <span class="timeline-org">Community Member</span></h3>
+              <span class="timeline-meta">Feb 2026 — Present · Sta Mesa, Manila</span>
+            </div>
+            <ul class="timeline-list">
+              <li>Learning workflow automation using Zapier, n8n, and UiPath.</li>
+            </ul>
+          </div>
+
+          <div class="timeline-item reveal">
+            <div class="timeline-head">
+              <h3 class="timeline-role">CyberSecurity Cadet <span class="timeline-org">@ Google Developer Groups</span></h3>
+              <span class="timeline-meta">Feb 2026 · Sta Mesa, Manila</span>
+            </div>
+            <ul class="timeline-list">
+              <li>Studying cybersecurity fundamentals and penetration testing.</li>
+              <li>Working with the CIA triad: confidentiality, integrity, and availability.</li>
+              <li>Learning to identify and prevent prompt injection attacks.</li>
+            </ul>
+          </div>
+
+          <div class="timeline-item reveal" hidden>
+            <div class="timeline-head">
+              <h3 class="timeline-role">DataCamp Scholar</h3>
+              <span class="timeline-meta">Jan 2026 — Present · Sta Mesa, Manila</span>
+            </div>
+            <ul class="timeline-list">
+              <li>Exploring data engineering and earning certifications in AI and data engineering.</li>
+              <li>Building foundations in AI and machine learning.</li>
+            </ul>
+          </div>
+
+          <div class="timeline-item reveal" hidden>
+            <div class="timeline-head">
+              <h3 class="timeline-role">PUP Wired</h3>
+              <span class="timeline-meta">Sept 2025 — Present · Sta Mesa, Manila</span>
+            </div>
+            <ul class="timeline-list">
+              <li>Hands-on experience building robots with Arduino.</li>
+              <li>Experience in 3D printing, fabrication, welding, and soldering.</li>
+            </ul>
+          </div>
+
+          <div class="timeline-item reveal" hidden>
+            <div class="timeline-head">
+              <h3 class="timeline-role">AWS Skill Builder Member</h3>
+              <span class="timeline-meta">Sept 2025 — Present · Sta Mesa, Manila</span>
+            </div>
+            <ul class="timeline-list">
+              <li>Hands-on with AWS services including EC2, S3, and Lambda.</li>
+              <li>Learning to translate business problems into cloud solutions.</li>
+            </ul>
+          </div>
+
+          <div class="timeline-item reveal" hidden>
+            <div class="timeline-head">
+              <h3 class="timeline-role">DOST-SEI S&amp;T Undergraduate Scholar</h3>
+              <span class="timeline-meta">Aug 2025 — Present · Antipolo City, Rizal</span>
+            </div>
+          </div>
+
+        </div>
+      </section>
+    </div>
+
+    <div class="tab-panel" data-tab="stack" id="tab-stack" hidden>
+      <section id="stack" class="section">
+        <p class="section-label">01 — stack</p>
+        <div class="reveal">
+
+          <div class="stack-group">
+            <p class="stack-group-label">Languages</p>
+            <div class="tag-row">
+              <span class="tag">c</span>
+              <span class="tag">c++</span>
+              <span class="tag">html5</span>
+              <span class="tag">css3</span>
+              <span class="tag">javascript</span>
+              <span class="tag">typescript</span>
+              <span class="tag">python</span>
+              <span class="tag">solidity</span>
+              <span class="tag">kotlin</span>
+              <span class="tag">rust</span>
+            </div>
+          </div>
+
+          <div class="stack-group">
+            <p class="stack-group-label">Frontend</p>
+            <div class="tag-row">
+              <span class="tag">react</span>
+              <span class="tag">react router</span>
+              <span class="tag">react native</span>
+              <span class="tag">react query</span>
+              <span class="tag">next.js</span>
+              <span class="tag">vite</span>
+              <span class="tag">tailwind css</span>
+              <span class="tag">jetpack compose</span>
+            </div>
+          </div>
+
+          <div class="stack-group">
+            <p class="stack-group-label">Backend &amp; Databases</p>
+            <div class="tag-row">
+              <span class="tag">node.js</span>
+              <span class="tag">express</span>
+              <span class="tag">fastapi</span>
+              <span class="tag">mysql</span>
+              <span class="tag">postgresql</span>
+              <span class="tag">prisma</span>
               <span class="tag">supabase</span>
+              <span class="tag">firebase</span>
+            </div>
+          </div>
+
+          <div class="stack-group">
+            <p class="stack-group-label">AI &amp; ML</p>
+            <div class="tag-row">
+              <span class="tag">numpy</span>
+              <span class="tag">pandas</span>
+              <span class="tag">groq</span>
+              <span class="tag">whisper</span>
+              <span class="tag">gemini</span>
+              <span class="tag">claude</span>
               <span class="tag">ollama</span>
             </div>
-            <a class="card-link" href="https://lista-orpin.vercel.app/" target="_blank" rel="noopener">view project ↗</a>
           </div>
-        </article>
 
-        <article class="card project-card reveal" hidden>
-          <div class="project-thumb halftone-thumb" aria-hidden="true"></div>
-          <div class="card-body">
-            <div class="card-head">
-              <h3>LINGAP</h3>
-            </div>
-            <p class="card-desc">A transparent donation platform using Soroban smart contracts to turn donation drives into verified, milestone-based aid campaigns — funds are only released when progress is proven.</p>
+          <div class="stack-group">
+            <p class="stack-group-label">Blockchain</p>
             <div class="tag-row">
-              <span class="tag">next.js</span>
-              <span class="tag">python</span>
+              <span class="tag">web3.js</span>
+              <span class="tag">stellar sdk</span>
               <span class="tag">soroban</span>
+              <span class="tag">freighter wallet</span>
             </div>
-            <a class="card-link" href="https://lingap-ledger.vercel.app/community" target="_blank" rel="noopener">view project ↗</a>
           </div>
-        </article>
 
-      </div>
-    </section>
-
-    <section id="experience" class="section">
-      <div class="section-head">
-        <p class="section-label">02 — experience</p>
-        <button class="section-toggle" data-toggle-target="timeline" type="button">full history <span class="section-toggle-count">(8)</span> →</button>
-      </div>
-      <div class="timeline" id="timeline">
-
-        <div class="timeline-item reveal">
-          <div class="timeline-head">
-            <h3 class="timeline-role">Machine Learning Intern <span class="timeline-org">@ Flyrank</span></h3>
-            <span class="timeline-meta">Jun 2026 — Present · Manila</span>
-          </div>
-          <ul class="timeline-list">
-            <li>Building a real predictive model on real data as part of the Machine Learning track.</li>
-            <li>Completing the AI Fluency track alongside a specialization capstone.</li>
-            <li>Working on AI Marketing: GTM campaigns that start on the web and travel to every platform.</li>
-          </ul>
-        </div>
-
-        <div class="timeline-item reveal">
-          <div class="timeline-head">
-            <h3 class="timeline-role">Co-Founder &amp; Chief Experience Officer <span class="timeline-org">@ Listo</span></h3>
-            <span class="timeline-meta">Mar 2026 — Present · Pasig, Manila</span>
-          </div>
-          <ul class="timeline-list">
-            <li>Co-founded Listo (formerly SkillSeed), a climate participation platform for missions, community challenges, quests, and funding opportunities.</li>
-            <li>Own the full product experience, UX flows, and UI design across missions, community, and funding.</li>
-            <li>Drive product feel and structure from early-stage beta through official launch.</li>
-          </ul>
-        </div>
-
-        <div class="timeline-item reveal">
-          <div class="timeline-head">
-            <h3 class="timeline-role">WorkFlow PH <span class="timeline-org">Community Member</span></h3>
-            <span class="timeline-meta">Feb 2026 — Present · Sta Mesa, Manila</span>
-          </div>
-          <ul class="timeline-list">
-            <li>Learning workflow automation using Zapier, n8n, and UiPath.</li>
-          </ul>
-        </div>
-
-        <div class="timeline-item reveal">
-          <div class="timeline-head">
-            <h3 class="timeline-role">CyberSecurity Cadet <span class="timeline-org">@ Google Developer Groups</span></h3>
-            <span class="timeline-meta">Feb 2026 · Sta Mesa, Manila</span>
-          </div>
-          <ul class="timeline-list">
-            <li>Studying cybersecurity fundamentals and penetration testing.</li>
-            <li>Working with the CIA triad — confidentiality, integrity, and availability.</li>
-            <li>Learning to identify and prevent prompt injection attacks.</li>
-          </ul>
-        </div>
-
-        <div class="timeline-item reveal" hidden>
-          <div class="timeline-head">
-            <h3 class="timeline-role">DataCamp Scholar</h3>
-            <span class="timeline-meta">Jan 2026 — Present · Sta Mesa, Manila</span>
-          </div>
-          <ul class="timeline-list">
-            <li>Exploring data engineering and earning certifications in AI and data engineering.</li>
-            <li>Building foundations in AI and machine learning.</li>
-          </ul>
-        </div>
-
-        <div class="timeline-item reveal" hidden>
-          <div class="timeline-head">
-            <h3 class="timeline-role">PUP Wired</h3>
-            <span class="timeline-meta">Sept 2025 — Present · Sta Mesa, Manila</span>
-          </div>
-          <ul class="timeline-list">
-            <li>Hands-on experience building robots with Arduino.</li>
-            <li>Experience in 3D printing, fabrication, welding, and soldering.</li>
-          </ul>
-        </div>
-
-        <div class="timeline-item reveal" hidden>
-          <div class="timeline-head">
-            <h3 class="timeline-role">AWS Skill Builder Member</h3>
-            <span class="timeline-meta">Sept 2025 — Present · Sta Mesa, Manila</span>
-          </div>
-          <ul class="timeline-list">
-            <li>Hands-on with AWS services including EC2, S3, and Lambda.</li>
-            <li>Learning to translate business problems into cloud solutions.</li>
-          </ul>
-        </div>
-
-        <div class="timeline-item reveal" hidden>
-          <div class="timeline-head">
-            <h3 class="timeline-role">DOST-SEI S&amp;T Undergraduate Scholar</h3>
-            <span class="timeline-meta">Aug 2025 — Present · Antipolo City, Rizal</span>
-          </div>
-        </div>
-
-      </div>
-    </section>
-
-    <section id="education" class="section">
-      <p class="section-label">03 — education</p>
-      <div class="education-list reveal">
-
-        <div class="education-item">
-          <div class="education-head">
-            <p class="education-school">Polytechnic University of the Philippines</p>
-            <span class="education-date">2025 — Present · Sta Mesa, Manila</span>
-          </div>
-          <div class="education-sub">
-            <p class="education-detail">BS Computer Science, major in Cloud Computing</p>
-          </div>
-        </div>
-
-        <div class="education-item">
-          <div class="education-head">
-            <p class="education-school">Antipolo City Senior High School</p>
-            <span class="education-date">2023 — 2025 · Sta Cruz, Antipolo City</span>
-          </div>
-          <div class="education-sub">
-            <p class="education-detail">STEM · With High Honors</p>
-          </div>
-        </div>
-
-        <div class="education-item">
-          <div class="education-head">
-            <p class="education-school">Antipolo National High School</p>
-            <span class="education-date">2019 — 2023 · Sta Cruz, Antipolo City</span>
-          </div>
-          <div class="education-sub">
-            <span class="education-honors">With Honors</span>
-          </div>
-        </div>
-
-        <div class="education-item">
-          <div class="education-head">
-            <p class="education-school">Sta Cruz Elementary School</p>
-            <span class="education-date">2013 — 2019 · Sta Cruz, Antipolo City</span>
-          </div>
-        </div>
-
-      </div>
-    </section>
-
-    <section id="stack" class="section">
-      <p class="section-label">04 — stack</p>
-      <div class="reveal">
-
-        <div class="stack-group">
-          <p class="stack-group-label">Languages</p>
-          <div class="tag-row">
-            <span class="tag">c</span>
-            <span class="tag">c++</span>
-            <span class="tag">html5</span>
-            <span class="tag">css3</span>
-            <span class="tag">javascript</span>
-            <span class="tag">typescript</span>
-            <span class="tag">python</span>
-            <span class="tag">solidity</span>
-          </div>
-        </div>
-
-        <div class="stack-group">
-          <p class="stack-group-label">Frontend</p>
-          <div class="tag-row">
-            <span class="tag">react</span>
-            <span class="tag">react router</span>
-            <span class="tag">react native</span>
-            <span class="tag">react query</span>
-            <span class="tag">vite</span>
-            <span class="tag">tailwind css</span>
-          </div>
-        </div>
-
-        <div class="stack-group">
-          <p class="stack-group-label">Backend &amp; Cloud</p>
-          <div class="tag-row">
-            <span class="tag">node.js</span>
-            <span class="tag">fastapi</span>
-            <span class="tag">aws</span>
-            <span class="tag">google cloud</span>
-            <span class="tag">mysql</span>
-            <span class="tag">web3.js</span>
-          </div>
-        </div>
-
-        <div class="stack-group">
-          <p class="stack-group-label">Data &amp; ML</p>
-          <div class="tag-row">
-            <span class="tag">numpy</span>
-            <span class="tag">pandas</span>
-          </div>
-        </div>
-
-        <div class="stack-group">
-          <p class="stack-group-label">Testing</p>
-          <div class="tag-row">
-            <span class="tag">jasmine</span>
-            <span class="tag">vitest</span>
-          </div>
-        </div>
-
-        <div class="stack-group">
-          <p class="stack-group-label">Tools</p>
-          <div class="tag-row">
-            <span class="tag">git</span>
-            <span class="tag">github</span>
-            <span class="tag">gitlab</span>
-            <span class="tag">figma</span>
-            <span class="tag">canva</span>
-            <span class="tag">notion</span>
-            <span class="tag">prettier</span>
-          </div>
-        </div>
-
-      </div>
-    </section>
-
-    <section id="certifications" class="section">
-      <div class="section-head">
-        <p class="section-label">05 — certifications</p>
-        <button class="section-toggle" data-toggle-target="cert-list" type="button">all certifications <span class="section-toggle-count">(5)</span> →</button>
-      </div>
-      <div class="cert-list reveal" id="cert-list">
-
-        <div class="cert-item">
-          <a class="cert-thumb-link" href="images/certificates/aws-ai-practitioner.jpg" target="_blank" rel="noopener">
-            <img class="cert-thumb" src="images/certificates/aws-ai-practitioner.jpg" alt="AWS Certified AI Practitioner certificate" loading="lazy" />
-          </a>
-          <div class="cert-info">
-            <div>
-              <span class="cert-name">AWS Certified AI Practitioner</span>
-              <span class="cert-issuer"> — AWS</span>
+          <div class="stack-group">
+            <p class="stack-group-label">Cloud &amp; Deployment</p>
+            <div class="tag-row">
+              <span class="tag">aws</span>
+              <span class="tag">google cloud</span>
+              <span class="tag">vercel</span>
             </div>
-            <a class="cert-date" href="https://www.credly.com/badges/04f0bfa5-e646-4d5a-86e3-a62c9045f911" target="_blank" rel="noopener">Jul 2026 ↗</a>
           </div>
-        </div>
 
-        <div class="cert-item">
-          <a class="cert-thumb-link" href="images/certificates/ai-engineer-developers-associate.jpg" target="_blank" rel="noopener">
-            <img class="cert-thumb" src="images/certificates/ai-engineer-developers-associate.jpg" alt="AI Engineer for Developers Associate certificate" loading="lazy" />
-          </a>
-          <div class="cert-info">
-            <div>
-              <span class="cert-name">AI Engineer for Developers Associate</span>
-              <span class="cert-issuer"> — DataCamp</span>
+          <div class="stack-group">
+            <p class="stack-group-label">Testing</p>
+            <div class="tag-row">
+              <span class="tag">jasmine</span>
+              <span class="tag">vitest</span>
             </div>
-            <a class="cert-date" href="https://www.datacamp.com/certificate/AIEDA0012590208832" target="_blank" rel="noopener">Jun 2026 ↗</a>
           </div>
-        </div>
 
-        <div class="cert-item">
-          <a class="cert-thumb-link" href="images/certificates/data-engineer-associate.jpg" target="_blank" rel="noopener">
-            <img class="cert-thumb" src="images/certificates/data-engineer-associate.jpg" alt="Data Engineer Associate certificate" loading="lazy" />
-          </a>
-          <div class="cert-info">
-            <div>
-              <span class="cert-name">Data Engineer Associate</span>
-              <span class="cert-issuer"> — DataCamp</span>
+          <div class="stack-group">
+            <p class="stack-group-label">Tools</p>
+            <div class="tag-row">
+              <span class="tag">git</span>
+              <span class="tag">github</span>
+              <span class="tag">gitlab</span>
+              <span class="tag">figma</span>
+              <span class="tag">canva</span>
+              <span class="tag">notion</span>
+              <span class="tag">prettier</span>
             </div>
-            <a class="cert-date" href="https://www.datacamp.com/certificate/DEA0019116879921" target="_blank" rel="noopener">Mar 2026 ↗</a>
           </div>
-        </div>
 
-        <div class="cert-item" hidden>
-          <a class="cert-thumb-link" href="images/certificates/google-ai-professional.png" target="_blank" rel="noopener">
-            <img class="cert-thumb" src="images/certificates/google-ai-professional.png" alt="Google AI Professional certificate" loading="lazy" />
-          </a>
-          <div class="cert-info">
-            <div>
-              <span class="cert-name">Google AI Professional</span>
-              <span class="cert-issuer"> — Google</span>
+        </div>
+      </section>
+    </div>
+
+    <div class="tab-panel" data-tab="certifications" id="tab-certifications" hidden>
+      <section id="certifications" class="section">
+        <div class="section-head">
+          <p class="section-label">01 — certifications</p>
+          <button class="section-toggle" data-toggle-target="cert-list" type="button">all certifications <span class="section-toggle-count">(5)</span> →</button>
+        </div>
+        <div class="cert-list reveal" id="cert-list">
+
+          <div class="cert-item">
+            <a class="cert-thumb-link" href="images/certificates/aws-ai-practitioner.jpg" target="_blank" rel="noopener">
+              <img class="cert-thumb" src="images/certificates/aws-ai-practitioner.jpg" alt="AWS Certified AI Practitioner certificate" loading="lazy" />
+            </a>
+            <div class="cert-info">
+              <div>
+                <span class="cert-name">AWS Certified AI Practitioner</span>
+                <span class="cert-issuer"> — AWS</span>
+              </div>
+              <a class="cert-date" href="https://www.credly.com/badges/04f0bfa5-e646-4d5a-86e3-a62c9045f911" target="_blank" rel="noopener">Jul 2026 ↗</a>
             </div>
-            <a class="cert-date" href="https://www.coursera.org/account/accomplishments/professional-cert/ASXEFCU3KVVN" target="_blank" rel="noopener">Feb 2026 ↗</a>
           </div>
-        </div>
 
-        <div class="cert-item" hidden>
-          <a class="cert-thumb-link" href="images/certificates/cisco-ccna.png" target="_blank" rel="noopener">
-            <img class="cert-thumb" src="images/certificates/cisco-ccna.png" alt="Cisco Certified Network Associate certificate" loading="lazy" />
-          </a>
-          <div class="cert-info">
-            <div>
-              <span class="cert-name">Cisco Certified Network Associate</span>
-              <span class="cert-issuer"> — NexusCloud IT Solutions</span>
+          <div class="cert-item">
+            <a class="cert-thumb-link" href="images/certificates/ai-engineer-developers-associate.jpg" target="_blank" rel="noopener">
+              <img class="cert-thumb" src="images/certificates/ai-engineer-developers-associate.jpg" alt="AI Engineer for Developers Associate certificate" loading="lazy" />
+            </a>
+            <div class="cert-info">
+              <div>
+                <span class="cert-name">AI Engineer for Developers Associate</span>
+                <span class="cert-issuer"> — DataCamp</span>
+              </div>
+              <a class="cert-date" href="https://www.datacamp.com/certificate/AIEDA0012590208832" target="_blank" rel="noopener">Jun 2026 ↗</a>
             </div>
-            <span class="cert-date">Feb 2026</span>
           </div>
+
+          <div class="cert-item">
+            <a class="cert-thumb-link" href="images/certificates/data-engineer-associate.jpg" target="_blank" rel="noopener">
+              <img class="cert-thumb" src="images/certificates/data-engineer-associate.jpg" alt="Data Engineer Associate certificate" loading="lazy" />
+            </a>
+            <div class="cert-info">
+              <div>
+                <span class="cert-name">Data Engineer Associate</span>
+                <span class="cert-issuer"> — DataCamp</span>
+              </div>
+              <a class="cert-date" href="https://www.datacamp.com/certificate/DEA0019116879921" target="_blank" rel="noopener">Mar 2026 ↗</a>
+            </div>
+          </div>
+
+          <div class="cert-item" hidden>
+            <a class="cert-thumb-link" href="images/certificates/google-ai-professional.png" target="_blank" rel="noopener">
+              <img class="cert-thumb" src="images/certificates/google-ai-professional.png" alt="Google AI Professional certificate" loading="lazy" />
+            </a>
+            <div class="cert-info">
+              <div>
+                <span class="cert-name">Google AI Professional</span>
+                <span class="cert-issuer"> — Google</span>
+              </div>
+              <a class="cert-date" href="https://www.coursera.org/account/accomplishments/professional-cert/ASXEFCU3KVVN" target="_blank" rel="noopener">Feb 2026 ↗</a>
+            </div>
+          </div>
+
+          <div class="cert-item" hidden>
+            <a class="cert-thumb-link" href="images/certificates/cisco-ccna.png" target="_blank" rel="noopener">
+              <img class="cert-thumb" src="images/certificates/cisco-ccna.png" alt="Cisco Certified Network Associate certificate" loading="lazy" />
+            </a>
+            <div class="cert-info">
+              <div>
+                <span class="cert-name">Cisco Certified Network Associate</span>
+                <span class="cert-issuer"> — NexusCloud IT Solutions</span>
+              </div>
+              <span class="cert-date">Feb 2026</span>
+            </div>
+          </div>
+
         </div>
+      </section>
+    </div>
 
-      </div>
-    </section>
-
-    <section id="badges" class="section">
-      <p class="section-label">06 — badges</p>
-      <div class="badge-grid reveal">
-
-        <a class="badge-item" href="https://www.credly.com/badges/04f0bfa5-e646-4d5a-86e3-a62c9045f911" target="_blank" rel="noopener">
-          <img src="images/badges/aws-ai-practitioner.png" alt="AWS Certified AI Practitioner badge" loading="lazy" />
-          <span class="badge-label">AWS AI Practitioner</span>
-        </a>
-
-        <a class="badge-item" href="https://www.datacamp.com/certificate/AIEDA0012590208832" target="_blank" rel="noopener">
-          <img src="images/badges/ai-engineer-developers-associate.png" alt="AI Engineer for Developers Associate badge" loading="lazy" />
-          <span class="badge-label">AI Engineer for Developers</span>
-        </a>
-
-        <a class="badge-item" href="https://www.datacamp.com/certificate/DEA0019116879921" target="_blank" rel="noopener">
-          <img src="images/badges/data-engineer-associate.png" alt="Data Engineer Associate badge" loading="lazy" />
-          <span class="badge-label">Data Engineer Associate</span>
-        </a>
-
-      </div>
-    </section>
-
-    <section id="gallery" class="section">
-      <p class="section-label">07 — gallery</p>
-      <div class="gallery-viewport reveal">
-        <div class="gallery-track">
-          <a class="gallery-item" href="images/gallery/38.jpg" target="_blank" rel="noopener"><img src="images/gallery/38.jpg" alt="" loading="lazy" /></a>
-          <a class="gallery-item" href="images/gallery/37.jpg" target="_blank" rel="noopener"><img src="images/gallery/37.jpg" alt="" loading="lazy" /></a>
-          <a class="gallery-item" href="images/gallery/36.jpg" target="_blank" rel="noopener"><img src="images/gallery/36.jpg" alt="" loading="lazy" /></a>
-          <a class="gallery-item" href="images/gallery/35.jpg" target="_blank" rel="noopener"><img src="images/gallery/35.jpg" alt="" loading="lazy" /></a>
-          <a class="gallery-item" href="images/gallery/34.jpg" target="_blank" rel="noopener"><img src="images/gallery/34.jpg" alt="" loading="lazy" /></a>
-          <a class="gallery-item" href="images/gallery/33.jpg" target="_blank" rel="noopener"><img src="images/gallery/33.jpg" alt="" loading="lazy" /></a>
-          <a class="gallery-item" href="images/gallery/32.jpg" target="_blank" rel="noopener"><img src="images/gallery/32.jpg" alt="" loading="lazy" /></a>
-          <a class="gallery-item" href="images/gallery/31.jpg" target="_blank" rel="noopener"><img src="images/gallery/31.jpg" alt="" loading="lazy" /></a>
-          <a class="gallery-item" href="images/gallery/30.jpg" target="_blank" rel="noopener"><img src="images/gallery/30.jpg" alt="" loading="lazy" /></a>
-          <a class="gallery-item" href="images/gallery/29.jpg" target="_blank" rel="noopener"><img src="images/gallery/29.jpg" alt="" loading="lazy" /></a>
-          <a class="gallery-item" href="images/gallery/28.jpg" target="_blank" rel="noopener"><img src="images/gallery/28.jpg" alt="" loading="lazy" /></a>
-          <a class="gallery-item" href="images/gallery/27.jpg" target="_blank" rel="noopener"><img src="images/gallery/27.jpg" alt="" loading="lazy" /></a>
-          <a class="gallery-item" href="images/gallery/26.jpg" target="_blank" rel="noopener"><img src="images/gallery/26.jpg" alt="" loading="lazy" /></a>
-          <a class="gallery-item" href="images/gallery/25.jpg" target="_blank" rel="noopener"><img src="images/gallery/25.jpg" alt="" loading="lazy" /></a>
-          <a class="gallery-item" href="images/gallery/24.jpg" target="_blank" rel="noopener"><img src="images/gallery/24.jpg" alt="" loading="lazy" /></a>
-          <a class="gallery-item" href="images/gallery/23.jpg" target="_blank" rel="noopener"><img src="images/gallery/23.jpg" alt="" loading="lazy" /></a>
-          <a class="gallery-item" href="images/gallery/22.jpg" target="_blank" rel="noopener"><img src="images/gallery/22.jpg" alt="" loading="lazy" /></a>
-          <a class="gallery-item" href="images/gallery/21.jpg" target="_blank" rel="noopener"><img src="images/gallery/21.jpg" alt="" loading="lazy" /></a>
-          <a class="gallery-item" href="images/gallery/20.jpg" target="_blank" rel="noopener"><img src="images/gallery/20.jpg" alt="" loading="lazy" /></a>
-          <a class="gallery-item" href="images/gallery/19.jpg" target="_blank" rel="noopener"><img src="images/gallery/19.jpg" alt="" loading="lazy" /></a>
-          <a class="gallery-item" href="images/gallery/18.jpg" target="_blank" rel="noopener"><img src="images/gallery/18.jpg" alt="" loading="lazy" /></a>
-          <a class="gallery-item" href="images/gallery/17.jpg" target="_blank" rel="noopener"><img src="images/gallery/17.jpg" alt="" loading="lazy" /></a>
-          <a class="gallery-item" href="images/gallery/16.jpg" target="_blank" rel="noopener"><img src="images/gallery/16.jpg" alt="" loading="lazy" /></a>
-          <a class="gallery-item" href="images/gallery/15.jpg" target="_blank" rel="noopener"><img src="images/gallery/15.jpg" alt="" loading="lazy" /></a>
-          <a class="gallery-item" href="images/gallery/14.jpg" target="_blank" rel="noopener"><img src="images/gallery/14.jpg" alt="" loading="lazy" /></a>
-          <a class="gallery-item" href="images/gallery/13.jpg" target="_blank" rel="noopener"><img src="images/gallery/13.jpg" alt="" loading="lazy" /></a>
-          <a class="gallery-item" href="images/gallery/12.jpg" target="_blank" rel="noopener"><img src="images/gallery/12.jpg" alt="" loading="lazy" /></a>
-          <a class="gallery-item" href="images/gallery/11.jpg" target="_blank" rel="noopener"><img src="images/gallery/11.jpg" alt="" loading="lazy" /></a>
-          <a class="gallery-item" href="images/gallery/10.jpg" target="_blank" rel="noopener"><img src="images/gallery/10.jpg" alt="" loading="lazy" /></a>
-          <a class="gallery-item" href="images/gallery/09.jpg" target="_blank" rel="noopener"><img src="images/gallery/09.jpg" alt="" loading="lazy" /></a>
-          <a class="gallery-item" href="images/gallery/08.jpg" target="_blank" rel="noopener"><img src="images/gallery/08.jpg" alt="" loading="lazy" /></a>
-          <a class="gallery-item" href="images/gallery/07.jpg" target="_blank" rel="noopener"><img src="images/gallery/07.jpg" alt="" loading="lazy" /></a>
-          <a class="gallery-item" href="images/gallery/06.jpg" target="_blank" rel="noopener"><img src="images/gallery/06.jpg" alt="" loading="lazy" /></a>
-          <a class="gallery-item" href="images/gallery/05.jpg" target="_blank" rel="noopener"><img src="images/gallery/05.jpg" alt="" loading="lazy" /></a>
-          <a class="gallery-item" href="images/gallery/04.jpg" target="_blank" rel="noopener"><img src="images/gallery/04.jpg" alt="" loading="lazy" /></a>
-          <a class="gallery-item" href="images/gallery/03.jpg" target="_blank" rel="noopener"><img src="images/gallery/03.jpg" alt="" loading="lazy" /></a>
-          <a class="gallery-item" href="images/gallery/02.jpg" target="_blank" rel="noopener"><img src="images/gallery/02.jpg" alt="" loading="lazy" /></a>
-          <a class="gallery-item" href="images/gallery/01.jpg" target="_blank" rel="noopener"><img src="images/gallery/01.jpg" alt="" loading="lazy" /></a>
-          <a class="gallery-item" href="images/gallery/38.jpg" target="_blank" rel="noopener" aria-hidden="true" tabindex="-1"><img src="images/gallery/38.jpg" alt="" loading="lazy" /></a>
-          <a class="gallery-item" href="images/gallery/37.jpg" target="_blank" rel="noopener" aria-hidden="true" tabindex="-1"><img src="images/gallery/37.jpg" alt="" loading="lazy" /></a>
-          <a class="gallery-item" href="images/gallery/36.jpg" target="_blank" rel="noopener" aria-hidden="true" tabindex="-1"><img src="images/gallery/36.jpg" alt="" loading="lazy" /></a>
-          <a class="gallery-item" href="images/gallery/35.jpg" target="_blank" rel="noopener" aria-hidden="true" tabindex="-1"><img src="images/gallery/35.jpg" alt="" loading="lazy" /></a>
-          <a class="gallery-item" href="images/gallery/34.jpg" target="_blank" rel="noopener" aria-hidden="true" tabindex="-1"><img src="images/gallery/34.jpg" alt="" loading="lazy" /></a>
-          <a class="gallery-item" href="images/gallery/33.jpg" target="_blank" rel="noopener" aria-hidden="true" tabindex="-1"><img src="images/gallery/33.jpg" alt="" loading="lazy" /></a>
-          <a class="gallery-item" href="images/gallery/32.jpg" target="_blank" rel="noopener" aria-hidden="true" tabindex="-1"><img src="images/gallery/32.jpg" alt="" loading="lazy" /></a>
-          <a class="gallery-item" href="images/gallery/31.jpg" target="_blank" rel="noopener" aria-hidden="true" tabindex="-1"><img src="images/gallery/31.jpg" alt="" loading="lazy" /></a>
-          <a class="gallery-item" href="images/gallery/30.jpg" target="_blank" rel="noopener" aria-hidden="true" tabindex="-1"><img src="images/gallery/30.jpg" alt="" loading="lazy" /></a>
-          <a class="gallery-item" href="images/gallery/29.jpg" target="_blank" rel="noopener" aria-hidden="true" tabindex="-1"><img src="images/gallery/29.jpg" alt="" loading="lazy" /></a>
-          <a class="gallery-item" href="images/gallery/28.jpg" target="_blank" rel="noopener" aria-hidden="true" tabindex="-1"><img src="images/gallery/28.jpg" alt="" loading="lazy" /></a>
-          <a class="gallery-item" href="images/gallery/27.jpg" target="_blank" rel="noopener" aria-hidden="true" tabindex="-1"><img src="images/gallery/27.jpg" alt="" loading="lazy" /></a>
-          <a class="gallery-item" href="images/gallery/26.jpg" target="_blank" rel="noopener" aria-hidden="true" tabindex="-1"><img src="images/gallery/26.jpg" alt="" loading="lazy" /></a>
-          <a class="gallery-item" href="images/gallery/25.jpg" target="_blank" rel="noopener" aria-hidden="true" tabindex="-1"><img src="images/gallery/25.jpg" alt="" loading="lazy" /></a>
-          <a class="gallery-item" href="images/gallery/24.jpg" target="_blank" rel="noopener" aria-hidden="true" tabindex="-1"><img src="images/gallery/24.jpg" alt="" loading="lazy" /></a>
-          <a class="gallery-item" href="images/gallery/23.jpg" target="_blank" rel="noopener" aria-hidden="true" tabindex="-1"><img src="images/gallery/23.jpg" alt="" loading="lazy" /></a>
-          <a class="gallery-item" href="images/gallery/22.jpg" target="_blank" rel="noopener" aria-hidden="true" tabindex="-1"><img src="images/gallery/22.jpg" alt="" loading="lazy" /></a>
-          <a class="gallery-item" href="images/gallery/21.jpg" target="_blank" rel="noopener" aria-hidden="true" tabindex="-1"><img src="images/gallery/21.jpg" alt="" loading="lazy" /></a>
-          <a class="gallery-item" href="images/gallery/20.jpg" target="_blank" rel="noopener" aria-hidden="true" tabindex="-1"><img src="images/gallery/20.jpg" alt="" loading="lazy" /></a>
-          <a class="gallery-item" href="images/gallery/19.jpg" target="_blank" rel="noopener" aria-hidden="true" tabindex="-1"><img src="images/gallery/19.jpg" alt="" loading="lazy" /></a>
-          <a class="gallery-item" href="images/gallery/18.jpg" target="_blank" rel="noopener" aria-hidden="true" tabindex="-1"><img src="images/gallery/18.jpg" alt="" loading="lazy" /></a>
-          <a class="gallery-item" href="images/gallery/17.jpg" target="_blank" rel="noopener" aria-hidden="true" tabindex="-1"><img src="images/gallery/17.jpg" alt="" loading="lazy" /></a>
-          <a class="gallery-item" href="images/gallery/16.jpg" target="_blank" rel="noopener" aria-hidden="true" tabindex="-1"><img src="images/gallery/16.jpg" alt="" loading="lazy" /></a>
-          <a class="gallery-item" href="images/gallery/15.jpg" target="_blank" rel="noopener" aria-hidden="true" tabindex="-1"><img src="images/gallery/15.jpg" alt="" loading="lazy" /></a>
-          <a class="gallery-item" href="images/gallery/14.jpg" target="_blank" rel="noopener" aria-hidden="true" tabindex="-1"><img src="images/gallery/14.jpg" alt="" loading="lazy" /></a>
-          <a class="gallery-item" href="images/gallery/13.jpg" target="_blank" rel="noopener" aria-hidden="true" tabindex="-1"><img src="images/gallery/13.jpg" alt="" loading="lazy" /></a>
-          <a class="gallery-item" href="images/gallery/12.jpg" target="_blank" rel="noopener" aria-hidden="true" tabindex="-1"><img src="images/gallery/12.jpg" alt="" loading="lazy" /></a>
-          <a class="gallery-item" href="images/gallery/11.jpg" target="_blank" rel="noopener" aria-hidden="true" tabindex="-1"><img src="images/gallery/11.jpg" alt="" loading="lazy" /></a>
-          <a class="gallery-item" href="images/gallery/10.jpg" target="_blank" rel="noopener" aria-hidden="true" tabindex="-1"><img src="images/gallery/10.jpg" alt="" loading="lazy" /></a>
-          <a class="gallery-item" href="images/gallery/09.jpg" target="_blank" rel="noopener" aria-hidden="true" tabindex="-1"><img src="images/gallery/09.jpg" alt="" loading="lazy" /></a>
-          <a class="gallery-item" href="images/gallery/08.jpg" target="_blank" rel="noopener" aria-hidden="true" tabindex="-1"><img src="images/gallery/08.jpg" alt="" loading="lazy" /></a>
-          <a class="gallery-item" href="images/gallery/07.jpg" target="_blank" rel="noopener" aria-hidden="true" tabindex="-1"><img src="images/gallery/07.jpg" alt="" loading="lazy" /></a>
-          <a class="gallery-item" href="images/gallery/06.jpg" target="_blank" rel="noopener" aria-hidden="true" tabindex="-1"><img src="images/gallery/06.jpg" alt="" loading="lazy" /></a>
-          <a class="gallery-item" href="images/gallery/05.jpg" target="_blank" rel="noopener" aria-hidden="true" tabindex="-1"><img src="images/gallery/05.jpg" alt="" loading="lazy" /></a>
-          <a class="gallery-item" href="images/gallery/04.jpg" target="_blank" rel="noopener" aria-hidden="true" tabindex="-1"><img src="images/gallery/04.jpg" alt="" loading="lazy" /></a>
-          <a class="gallery-item" href="images/gallery/03.jpg" target="_blank" rel="noopener" aria-hidden="true" tabindex="-1"><img src="images/gallery/03.jpg" alt="" loading="lazy" /></a>
-          <a class="gallery-item" href="images/gallery/02.jpg" target="_blank" rel="noopener" aria-hidden="true" tabindex="-1"><img src="images/gallery/02.jpg" alt="" loading="lazy" /></a>
-          <a class="gallery-item" href="images/gallery/01.jpg" target="_blank" rel="noopener" aria-hidden="true" tabindex="-1"><img src="images/gallery/01.jpg" alt="" loading="lazy" /></a>
-        </div>
-      </div>
-    </section>
-
-    <section id="about" class="section">
-      <p class="section-label">08 — about</p>
-      <div class="about-grid reveal">
-        <div class="about-copy">
-          <p>
-            I'm a Computer Science student focused on Cloud Computing at PUP,
-            and I spend most of my time turning ideas into shipped products —
-            climate-tech platforms, AI simulations, decentralized lending apps —
-            usually built solo or with a small team during hackathons.
+    <div class="tab-panel" data-tab="contact" id="tab-contact" hidden>
+      <section id="contact" class="section contact-section">
+        <p class="section-label">01 — contact</p>
+        <div class="reveal">
+          <h2 class="contact-title">let's talk</h2>
+          <p class="contact-copy">
+            The fastest way to reach me is email. I usually reply within a day.
           </p>
-          <p>
-            Outside of building, I show up to as many meetups, hackathons, and
-            tech summits as I can — anywhere I can learn from people further
-            along than me and get better at explaining what I build.
-          </p>
+          <a class="button-primary" href="mailto:melfredbernabe7@gmail.com">say hello ↗</a>
         </div>
-        <div class="stat-grid">
-          <div class="stat-cell">
-            <p class="stat-value">7+</p>
-            <p class="stat-label">projects shipped</p>
-          </div>
-          <div class="stat-cell">
-            <p class="stat-value">5</p>
-            <p class="stat-label">certifications</p>
-          </div>
-          <div class="stat-cell">
-            <p class="stat-value">16+</p>
-            <p class="stat-label">hackathons</p>
-          </div>
-          <div class="stat-cell">
-            <p class="stat-value">2025</p>
-            <p class="stat-label">started coding</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="contact" class="section contact-section">
-      <p class="section-label">09 — contact</p>
-      <div class="reveal">
-        <h2 class="contact-title">let's talk</h2>
-        <p class="contact-copy">
-          The fastest way to reach me is email. I usually reply within a day.
-        </p>
-        <a class="button-primary" href="mailto:melfredbernabe7@gmail.com">say hello ↗</a>
-      </div>
-    </section>
+      </section>
+    </div>
 
     <footer class="footer">
       <p>© 2026 Melfred Bernabe</p>

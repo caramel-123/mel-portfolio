@@ -62,27 +62,70 @@
     });
   }
 
-  function initScrollSpy() {
-    var sections = document.querySelectorAll('.section[id]');
-    var navLinks = document.querySelectorAll('[data-nav]');
-    if (!sections.length || !navLinks.length) return;
+  // Reassigned by initTabs() once it runs; initCommandPalette() calls this
+  // by reference, so the assignment order just needs to happen before a click.
+  var switchTab = function () {};
 
-    var observer = new IntersectionObserver(
-      function (entries) {
-        entries.forEach(function (entry) {
-          if (entry.isIntersecting) {
-            var id = entry.target.getAttribute('id');
-            navLinks.forEach(function (link) {
-              var match = link.getAttribute('href') === '#' + id;
-              link.classList.toggle('active', match);
-            });
-          }
+  function initTabs() {
+    var panels = Array.prototype.slice.call(document.querySelectorAll('.tab-panel'));
+    var navLinks = Array.prototype.slice.call(document.querySelectorAll('[data-nav]'));
+    if (!panels.length) return;
+
+    var validTabs = panels.map(function (p) { return p.getAttribute('data-tab'); });
+
+    function setActiveNav(tab) {
+      navLinks.forEach(function (link) {
+        link.classList.toggle('active', link.getAttribute('data-nav') === tab);
+      });
+    }
+
+    function activate(tab, opts) {
+      opts = opts || {};
+      if (validTabs.indexOf(tab) === -1) tab = 'home';
+
+      panels.forEach(function (panel) {
+        panel.hidden = panel.getAttribute('data-tab') !== tab;
+      });
+      setActiveNav(tab);
+
+      if (opts.updateHash !== false) {
+        history.pushState(null, '', '#' + tab);
+      }
+
+      if (tab === 'home') {
+        // The gallery marquee measured its track at 0 width while this tab
+        // was hidden (display: none collapses layout) — remeasure now.
+        window.dispatchEvent(new Event('resize'));
+      }
+
+      var scrollTarget = opts.scrollToId
+        ? document.querySelector(opts.scrollToId)
+        : document.getElementById('tab-' + tab);
+      if (scrollTarget) {
+        requestAnimationFrame(function () {
+          scrollTarget.scrollIntoView({ behavior: opts.smooth === false ? 'auto' : 'smooth', block: 'start' });
         });
-      },
-      { rootMargin: '-40% 0px -55% 0px', threshold: 0 }
-    );
+      }
+    }
 
-    sections.forEach(function (section) { observer.observe(section); });
+    switchTab = activate;
+
+    navLinks.forEach(function (link) {
+      link.addEventListener('click', function (e) {
+        var tab = link.getAttribute('data-nav');
+        if (!tab) return;
+        e.preventDefault();
+        activate(tab);
+      });
+    });
+
+    window.addEventListener('popstate', function () {
+      var tab = (location.hash || '').replace('#', '') || 'home';
+      activate(tab, { updateHash: false });
+    });
+
+    var initialTab = (location.hash || '').replace('#', '') || 'home';
+    activate(initialTab, { updateHash: false, smooth: false });
   }
 
   function initReveal() {
@@ -172,15 +215,16 @@
     if (!overlay || !input || !resultsEl || !triggers.length) return;
 
     var items = [
-      { label: 'projects', hint: 'section', href: '#projects' },
-      { label: 'experience', hint: 'section', href: '#experience' },
-      { label: 'education', hint: 'section', href: '#education' },
-      { label: 'stack', hint: 'section', href: '#stack' },
-      { label: 'certifications', hint: 'section', href: '#certifications' },
-      { label: 'badges', hint: 'section', href: '#badges' },
-      { label: 'gallery', hint: 'section', href: '#gallery' },
-      { label: 'about', hint: 'section', href: '#about' },
-      { label: 'contact', hint: 'section', href: '#contact' },
+      { label: 'home', hint: 'tab', tab: 'home' },
+      { label: 'about', hint: 'tab', tab: 'home', scrollTo: '#about' },
+      { label: 'education', hint: 'tab', tab: 'home', scrollTo: '#education' },
+      { label: 'badges', hint: 'tab', tab: 'home', scrollTo: '#badges' },
+      { label: 'gallery', hint: 'tab', tab: 'home', scrollTo: '#gallery' },
+      { label: 'projects', hint: 'tab', tab: 'projects' },
+      { label: 'experience', hint: 'tab', tab: 'experience' },
+      { label: 'stack', hint: 'tab', tab: 'stack' },
+      { label: 'certifications', hint: 'tab', tab: 'certifications' },
+      { label: 'contact', hint: 'tab', tab: 'contact' },
       { label: 'email', hint: 'link', href: 'mailto:melfredbernabe7@gmail.com', mail: true },
       { label: 'github', hint: 'link', href: 'https://github.com/caramel-123', external: true },
       { label: 'linkedin', hint: 'link', href: 'https://www.linkedin.com/in/melfred-bernabe-869ba4360/', external: true },
@@ -230,9 +274,8 @@
         window.location.href = item.href;
       } else if (item.external) {
         window.open(item.href, '_blank', 'noopener');
-      } else {
-        document.querySelector(item.href).scrollIntoView({ behavior: 'smooth' });
-        history.pushState(null, '', item.href);
+      } else if (item.tab) {
+        switchTab(item.tab, { scrollToId: item.scrollTo });
       }
     }
 
@@ -436,6 +479,7 @@
     document.querySelectorAll('.section-toggle').forEach(function (btn) {
       var target = document.getElementById(btn.getAttribute('data-toggle-target'));
       if (!target) return;
+      var section = target.closest('.section');
 
       var moreLabel = btn.innerHTML;
       var lessLabel = 'show less ↑';
@@ -450,7 +494,15 @@
         expanded = !expanded;
         hiddenItems.forEach(function (el) { el.hidden = !expanded; });
         btn.innerHTML = expanded ? lessLabel : moreLabel;
-        if (!expanded) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        if (section) section.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      });
+    });
+  }
+
+  function initHomePreviewLinks() {
+    document.querySelectorAll('[data-goto-tab]').forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        switchTab(btn.getAttribute('data-goto-tab'));
       });
     });
   }
@@ -458,11 +510,12 @@
   document.addEventListener('DOMContentLoaded', function () {
     initTheme();
     initMobileMenu();
-    initScrollSpy();
+    initTabs();
     initReveal();
     initGalleryMarquee();
     initCommandPalette();
     initPresenceAndChat();
     initSectionToggles();
+    initHomePreviewLinks();
   });
 })();
