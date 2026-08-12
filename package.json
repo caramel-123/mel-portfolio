@@ -1,0 +1,9 @@
+{
+  "name": "mel-portfolio",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Static portfolio site (plain HTML/CSS/JS, no build step)",
+  "scripts": {
+    "dev": "python3 -m http.server 8934"
+  }
+}
