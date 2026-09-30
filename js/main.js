@@ -490,11 +490,33 @@
       }
 
       var expanded = false;
-      btn.addEventListener('click', function () {
-        expanded = !expanded;
+      function setExpanded(value) {
+        expanded = value;
         hiddenItems.forEach(function (el) { el.hidden = !expanded; });
         btn.innerHTML = expanded ? lessLabel : moreLabel;
+      }
+      // Lets the home-page "view all" buttons open the full list on arrival.
+      btn.expandAll = function () { setExpanded(true); };
+      // Tabs open with the full list; the button then works as "show less".
+      setExpanded(true);
+      btn.addEventListener('click', function () {
+        setExpanded(!expanded);
         if (section) section.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      });
+    });
+  }
+
+  function initProjectFan() {
+    var fan = document.getElementById('project-fan');
+    if (!fan) return;
+    var cards = Array.prototype.slice.call(fan.querySelectorAll('.project-card'));
+    cards.forEach(function (card) {
+      card.addEventListener('click', function (e) {
+        if (card.getAttribute('data-pos') === 'center') return;
+        e.preventDefault();
+        var oldCenter = fan.querySelector('[data-pos="center"]');
+        oldCenter.setAttribute('data-pos', card.getAttribute('data-pos'));
+        card.setAttribute('data-pos', 'center');
       });
     });
   }
@@ -502,7 +524,11 @@
   function initHomePreviewLinks() {
     document.querySelectorAll('[data-goto-tab]').forEach(function (btn) {
       btn.addEventListener('click', function () {
-        switchTab(btn.getAttribute('data-goto-tab'));
+        var tab = btn.getAttribute('data-goto-tab');
+        var panel = document.getElementById('tab-' + tab);
+        var toggle = panel && panel.querySelector('.section-toggle');
+        if (toggle && toggle.expandAll) toggle.expandAll();
+        switchTab(tab);
       });
     });
   }
@@ -517,5 +543,6 @@
     initPresenceAndChat();
     initSectionToggles();
     initHomePreviewLinks();
+    initProjectFan();
   });
 })();
