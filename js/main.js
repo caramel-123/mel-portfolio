@@ -157,12 +157,19 @@
   }
 
   function initGalleryMarquee() {
-    var viewport = document.querySelector('.gallery-viewport');
-    var track = document.querySelector('.gallery-track');
+    startMarquee(document.querySelector('.gallery-viewport'), document.querySelector('.gallery-track'), 36);
+  }
+
+  // Auto-scrolls a duplicated track; pauses on mouse hover, stays swipeable.
+  function startMarquee(viewport, track, speed, setSize) {
     if (!viewport || !track) return;
+    setSize = setSize || track.children.length / 2;
 
     var half = 0;
-    function measure() { half = track.scrollWidth / 2; }
+    function measure() {
+      // Distance from the first item to its duplicate, so the loop is seamless (includes the gap).
+      half = track.children.length > setSize ? track.children[setSize].offsetLeft - track.children[0].offsetLeft : 0;
+    }
     measure();
     window.addEventListener('resize', measure);
 
@@ -173,38 +180,73 @@
     }
     viewport.addEventListener('scroll', normalize, { passive: true });
 
-    var paused = false;
+    // Pause only while a mouse hovers the gallery; after a swipe it resumes on its own.
+    var hovering = false;
+    var touching = false;
     var resumeTimer = null;
-    function pause() {
-      paused = true;
-      if (resumeTimer) clearTimeout(resumeTimer);
-    }
-    function scheduleResume() {
-      if (resumeTimer) clearTimeout(resumeTimer);
-      resumeTimer = setTimeout(function () { paused = false; }, 2000);
-    }
-    ['pointerdown', 'touchstart', 'wheel'].forEach(function (evt) {
-      viewport.addEventListener(evt, pause, { passive: true });
+    var paused = false;
+    function update() { paused = hovering || touching; }
+
+    viewport.addEventListener('pointerenter', function (e) {
+      if (e.pointerType === 'mouse') { hovering = true; update(); }
     });
-    ['pointerup', 'touchend', 'mouseleave'].forEach(function (evt) {
-      viewport.addEventListener(evt, scheduleResume, { passive: true });
+    viewport.addEventListener('pointerleave', function (e) {
+      if (e.pointerType === 'mouse') { hovering = false; update(); }
+    });
+    viewport.addEventListener('touchstart', function () {
+      touching = true;
+      if (resumeTimer) clearTimeout(resumeTimer);
+      update();
+    }, { passive: true });
+    ['touchend', 'touchcancel'].forEach(function (evt) {
+      viewport.addEventListener(evt, function () {
+        if (resumeTimer) clearTimeout(resumeTimer);
+        resumeTimer = setTimeout(function () { touching = false; update(); }, 800);
+      }, { passive: true });
     });
 
     if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
 
-    var speed = 36; // px per second
     var last = null;
+    var pos = viewport.scrollLeft;
     function tick(ts) {
       if (last === null) last = ts;
       var dt = (ts - last) / 1000;
       last = ts;
       if (!paused) {
-        viewport.scrollLeft += speed * dt;
-        normalize();
+        // Keep a fractional position: browsers round scrollLeft, so tiny per-frame steps would stall.
+        if (Math.abs(viewport.scrollLeft - pos) > 1.5) pos = viewport.scrollLeft;
+        pos += speed * dt;
+        if (half > 0 && pos >= half) pos -= half;
+        viewport.scrollLeft = pos;
+      } else {
+        pos = viewport.scrollLeft;
       }
       requestAnimationFrame(tick);
     }
     requestAnimationFrame(tick);
+  }
+
+  function initBadgeSlider() {
+    var viewport = document.querySelector('.badge-grid');
+    var track = document.querySelector('.badge-track');
+    if (!viewport || !track) return;
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    var originals = Array.prototype.slice.call(track.children);
+    var setSize = originals.length;
+    var setWidth = track.scrollWidth + 16;
+    function addSet() {
+      originals.forEach(function (el) {
+        var clone = el.cloneNode(true);
+        clone.setAttribute('aria-hidden', 'true');
+        clone.setAttribute('tabindex', '-1');
+        track.appendChild(clone);
+      });
+    }
+    // One full copy, plus more until the track outruns the viewport by a whole set, so the loop never shows a gap.
+    addSet();
+    for (var i = 0; i < 8 && track.scrollWidth < viewport.clientWidth + setWidth; i++) addSet();
+    startMarquee(viewport, track, 30, setSize);
   }
 
   function initCommandPalette() {
@@ -539,6 +581,7 @@
     initTabs();
     initReveal();
     initGalleryMarquee();
+    initBadgeSlider();
     initCommandPalette();
     initPresenceAndChat();
     initSectionToggles();

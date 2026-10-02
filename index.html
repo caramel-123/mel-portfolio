@@ -8,7 +8,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="css/styles.css" />
+<link rel="stylesheet" href="css/styles.css?v=2" />
 </head>
 <body>
 
@@ -181,12 +181,12 @@
       <section id="home-projects" class="section">
         <div class="section-head">
           <p class="section-label">01 — projects</p>
-          <button class="section-toggle" data-goto-tab="projects" type="button">view all <span class="section-toggle-count">(13)</span> →</button>
+          <button class="section-toggle" data-goto-tab="projects" type="button">view all <span class="section-toggle-count">(23)</span> →</button>
         </div>
         <div class="project-grid project-fan" id="project-fan">
 
           <article class="card project-card" data-pos="center">
-            <div class="project-thumb halftone-thumb" aria-hidden="true"></div>
+            <div class="project-thumb has-image"><img src="images/app-header/listo-app.png" alt="SkillSeed app preview" loading="lazy" /></div>
             <div class="card-body">
               <div class="card-head">
                 <h3>SkillSeed</h3>
@@ -199,12 +199,12 @@
                 <span class="tag">supabase</span>
                 <span class="tag">tailwind</span>
               </div>
-              <a class="card-link" href="https://skill-seed-climate-learning-website.vercel.app/" target="_blank" rel="noopener">view project ↗</a>
+              <a class="card-link" href="https://skill-seed-climate-learning-website.vercel.app/" target="_blank" rel="noopener" aria-label="View live project" title="View live project"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></svg></a>
             </div>
           </article>
 
           <article class="card project-card" data-pos="left">
-            <div class="project-thumb halftone-thumb" aria-hidden="true"></div>
+            <div class="project-thumb has-image"><img src="images/app-header/bankero-app.png" alt="Bankero app preview" loading="lazy" /></div>
             <div class="card-body">
               <div class="card-head">
                 <h3>Bankero</h3>
@@ -216,12 +216,15 @@
                 <span class="tag">soroban</span>
                 <span class="tag">credit scoring</span>
               </div>
-              <a class="card-link" href="https://bankero.vercel.app" target="_blank" rel="noopener">view project ↗</a>
+              <div class="card-actions">
+                <a class="card-link" href="https://bankero.vercel.app" target="_blank" rel="noopener" aria-label="View live project" title="View live project"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></svg></a>
+                <a class="card-github" href="https://github.com/caramel-123/Bankero" target="_blank" rel="noopener" aria-label="View source on GitHub" title="View source on GitHub"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.1.79-.25.79-.56v-2c-3.2.7-3.87-1.54-3.87-1.54-.52-1.33-1.28-1.69-1.28-1.69-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.03 1.76 2.69 1.25 3.35.96.1-.74.4-1.25.73-1.54-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.28 1.18-3.08-.12-.29-.51-1.46.11-3.05 0 0 .97-.31 3.16 1.18a10.9 10.9 0 0 1 5.76 0c2.19-1.49 3.15-1.18 3.15-1.18.63 1.59.24 2.76.12 3.05.74.8 1.18 1.82 1.18 3.08 0 4.42-2.69 5.39-5.26 5.68.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.51 11.51 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z"/></svg></a>
+              </div>
             </div>
           </article>
 
           <article class="card project-card" data-pos="right">
-            <div class="project-thumb halftone-thumb" aria-hidden="true"></div>
+            <div class="project-thumb has-image"><img src="images/app-header/lingap-app.png" alt="LINGAP app preview" loading="lazy" /></div>
             <div class="card-body">
               <div class="card-head">
                 <h3>LINGAP</h3>
@@ -233,7 +236,10 @@
                 <span class="tag">python</span>
                 <span class="tag">soroban</span>
               </div>
-              <a class="card-link" href="https://lingap-ledger.vercel.app/community" target="_blank" rel="noopener">view project ↗</a>
+              <div class="card-actions">
+                <a class="card-link" href="https://lingap-ledger.vercel.app/community" target="_blank" rel="noopener" aria-label="View live project" title="View live project"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></svg></a>
+                <a class="card-github" href="https://github.com/wolfsenberg/LINGAP" target="_blank" rel="noopener" aria-label="View source on GitHub" title="View source on GitHub"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.1.79-.25.79-.56v-2c-3.2.7-3.87-1.54-3.87-1.54-.52-1.33-1.28-1.69-1.28-1.69-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.03 1.76 2.69 1.25 3.35.96.1-.74.4-1.25.73-1.54-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.28 1.18-3.08-.12-.29-.51-1.46.11-3.05 0 0 .97-.31 3.16 1.18a10.9 10.9 0 0 1 5.76 0c2.19-1.49 3.15-1.18 3.15-1.18.63 1.59.24 2.76.12 3.05.74.8 1.18 1.82 1.18 3.08 0 4.42-2.69 5.39-5.26 5.68.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.51 11.51 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z"/></svg></a>
+              </div>
             </div>
           </article>
 
@@ -248,6 +254,9 @@
         <div class="timeline">
 
           <div class="timeline-item reveal">
+            <div class="timeline-logo">
+              <img src="images/logos/gdg-logo.jpg" alt="Google Developer Groups logo" loading="lazy" />
+            </div>
             <div class="timeline-head">
               <h3 class="timeline-role"><a class="timeline-link" href="https://www.facebook.com/gdg.pupmnl" target="_blank" rel="noopener">Industry Partnerships Co-Lead <span class="timeline-org">@ Google Developer Groups PUP</span></a></h3>
               <span class="timeline-meta">Sept 2026 — Present · Sta Mesa, Manila</span>
@@ -259,6 +268,9 @@
           </div>
 
           <div class="timeline-item reveal">
+            <div class="timeline-logo">
+              <img src="images/logos/aws-logo.jpeg" alt="AWS Student Builder Group logo" loading="lazy" />
+            </div>
             <div class="timeline-head">
               <h3 class="timeline-role"><a class="timeline-link" href="https://www.facebook.com/awssbg.pup.manila" target="_blank" rel="noopener">AI/ML Skill Builder Department Co-Lead <span class="timeline-org">@ AWS Student Builder Group, PUP</span></a></h3>
               <span class="timeline-meta">Sept 2026 — Present · Sta Mesa, Manila</span>
@@ -270,6 +282,9 @@
           </div>
 
           <div class="timeline-item reveal">
+            <div class="timeline-logo">
+              <img src="images/logos/eskwelabs-logo.png" alt="Eskwelabs logo" loading="lazy" />
+            </div>
             <div class="timeline-head">
               <h3 class="timeline-role"><a class="timeline-link" href="https://www.facebook.com/Eskwelabs" target="_blank" rel="noopener">AI Solution Development Intern <span class="timeline-org">@ Eskwelabs</span></a></h3>
               <span class="timeline-meta">Aug 2026 — Present</span>
@@ -281,6 +296,9 @@
           </div>
 
           <div class="timeline-item reveal">
+            <div class="timeline-logo">
+              <img src="images/logos/wecreate-logo.jpg" alt="WeCreate logo" loading="lazy" />
+            </div>
             <div class="timeline-head">
               <h3 class="timeline-role"><a class="timeline-link" href="https://www.facebook.com/WeCREATE.aus" target="_blank" rel="noopener">Externals <span class="timeline-org">@ WeCreate</span></a></h3>
               <span class="timeline-meta">Aug 2026 — Present</span>
@@ -467,6 +485,7 @@
       <section id="badges" class="section">
         <p class="section-label">07 — badges</p>
         <div class="badge-grid reveal">
+          <div class="badge-track">
 
           <a class="badge-item" href="https://www.credly.com/badges/04f0bfa5-e646-4d5a-86e3-a62c9045f911" target="_blank" rel="noopener">
             <img src="images/badges/aws-ai-practitioner.png" alt="AWS Certified AI Practitioner badge" loading="lazy" />
@@ -483,6 +502,17 @@
             <span class="badge-label">Data Engineer Associate</span>
           </a>
 
+          <div class="badge-item">
+            <img src="images/badges/isc2-cc.png" alt="ISC2 Certified in Cybersecurity (CC) badge" loading="lazy" />
+            <span class="badge-label">ISC2 Certified in Cybersecurity</span>
+          </div>
+
+          <a class="badge-item" href="https://appkademiya.online/verify/CERT-CCP-CYBERSECURITY-PROFESSIONAL-20260812-8C7FE1C1C012" target="_blank" rel="noopener">
+            <img src="images/badges/appkademiya-ccp.png" alt="Appkademiya Certified Cybersecurity Professional (CCP) badge" loading="lazy" />
+            <span class="badge-label">Certified Cybersecurity Professional</span>
+          </a>
+
+          </div>
         </div>
       </section>
 
@@ -590,12 +620,12 @@
       <section id="projects" class="section">
         <div class="section-head">
           <p class="section-label">01 — projects</p>
-          <button class="section-toggle" data-toggle-target="project-grid" type="button">view all <span class="section-toggle-count">(13)</span> →</button>
+          <button class="section-toggle" data-toggle-target="project-grid" type="button">view all <span class="section-toggle-count">(23)</span> →</button>
         </div>
         <div class="project-grid" id="project-grid">
 
           <article class="card project-card reveal">
-            <div class="project-thumb halftone-thumb" aria-hidden="true"></div>
+            <div class="project-thumb has-image"><img src="images/app-header/listo-app.png" alt="SkillSeed app preview" loading="lazy" /></div>
             <div class="card-body">
               <div class="card-head">
                 <h3>SkillSeed</h3>
@@ -608,12 +638,12 @@
                 <span class="tag">supabase</span>
                 <span class="tag">tailwind</span>
               </div>
-              <a class="card-link" href="https://skill-seed-climate-learning-website.vercel.app/" target="_blank" rel="noopener">view project ↗</a>
+              <a class="card-link" href="https://skill-seed-climate-learning-website.vercel.app/" target="_blank" rel="noopener" aria-label="View live project" title="View live project"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></svg></a>
             </div>
           </article>
 
           <article class="card project-card reveal">
-            <div class="project-thumb halftone-thumb" aria-hidden="true"></div>
+            <div class="project-thumb has-image"><img src="images/app-header/bankero-app.png" alt="Bankero app preview" loading="lazy" /></div>
             <div class="card-body">
               <div class="card-head">
                 <h3>Bankero</h3>
@@ -625,12 +655,15 @@
                 <span class="tag">soroban</span>
                 <span class="tag">credit scoring</span>
               </div>
-              <a class="card-link" href="https://bankero.vercel.app" target="_blank" rel="noopener">view project ↗</a>
+              <div class="card-actions">
+                <a class="card-link" href="https://bankero.vercel.app" target="_blank" rel="noopener" aria-label="View live project" title="View live project"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></svg></a>
+                <a class="card-github" href="https://github.com/caramel-123/Bankero" target="_blank" rel="noopener" aria-label="View source on GitHub" title="View source on GitHub"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.1.79-.25.79-.56v-2c-3.2.7-3.87-1.54-3.87-1.54-.52-1.33-1.28-1.69-1.28-1.69-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.03 1.76 2.69 1.25 3.35.96.1-.74.4-1.25.73-1.54-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.28 1.18-3.08-.12-.29-.51-1.46.11-3.05 0 0 .97-.31 3.16 1.18a10.9 10.9 0 0 1 5.76 0c2.19-1.49 3.15-1.18 3.15-1.18.63 1.59.24 2.76.12 3.05.74.8 1.18 1.82 1.18 3.08 0 4.42-2.69 5.39-5.26 5.68.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.51 11.51 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z"/></svg></a>
+              </div>
             </div>
           </article>
 
           <article class="card project-card reveal">
-            <div class="project-thumb halftone-thumb" aria-hidden="true"></div>
+            <div class="project-thumb has-image"><img src="images/app-header/lingap-app.png" alt="LINGAP app preview" loading="lazy" /></div>
             <div class="card-body">
               <div class="card-head">
                 <h3>LINGAP</h3>
@@ -642,12 +675,15 @@
                 <span class="tag">python</span>
                 <span class="tag">soroban</span>
               </div>
-              <a class="card-link" href="https://lingap-ledger.vercel.app/community" target="_blank" rel="noopener">view project ↗</a>
+              <div class="card-actions">
+                <a class="card-link" href="https://lingap-ledger.vercel.app/community" target="_blank" rel="noopener" aria-label="View live project" title="View live project"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></svg></a>
+                <a class="card-github" href="https://github.com/wolfsenberg/LINGAP" target="_blank" rel="noopener" aria-label="View source on GitHub" title="View source on GitHub"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.1.79-.25.79-.56v-2c-3.2.7-3.87-1.54-3.87-1.54-.52-1.33-1.28-1.69-1.28-1.69-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.03 1.76 2.69 1.25 3.35.96.1-.74.4-1.25.73-1.54-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.28 1.18-3.08-.12-.29-.51-1.46.11-3.05 0 0 .97-.31 3.16 1.18a10.9 10.9 0 0 1 5.76 0c2.19-1.49 3.15-1.18 3.15-1.18.63 1.59.24 2.76.12 3.05.74.8 1.18 1.82 1.18 3.08 0 4.42-2.69 5.39-5.26 5.68.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.51 11.51 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z"/></svg></a>
+              </div>
             </div>
           </article>
 
           <article class="card project-card reveal" hidden>
-            <div class="project-thumb halftone-thumb" aria-hidden="true"></div>
+            <div class="project-thumb has-image"><img src="images/app-header/aws-challenge1-app.png" alt="AWS Network Challenge 1 preview" loading="lazy" /></div>
             <div class="card-body">
               <div class="card-head">
                 <h3>AWS Network Challenge 1</h3>
@@ -658,12 +694,172 @@
                 <span class="tag">ec2</span>
                 <span class="tag">vpc</span>
               </div>
-              <a class="card-link" href="https://app.notion.com/p/melfredbernabe/AWS-Network-Challenge-1-Deploy-Web-App-to-EC2-Two-Tier-VPC-Architecture-3d558673562280a1b10beb102015cf4f" target="_blank" rel="noopener">view project ↗</a>
+              <a class="card-link" href="https://app.notion.com/p/melfredbernabe/AWS-Network-Challenge-1-Deploy-Web-App-to-EC2-Two-Tier-VPC-Architecture-3d558673562280a1b10beb102015cf4f" target="_blank" rel="noopener" aria-label="View live project" title="View live project"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></svg></a>
             </div>
           </article>
 
           <article class="card project-card reveal" hidden>
-            <div class="project-thumb halftone-thumb" aria-hidden="true"></div>
+            <div class="project-thumb has-image"><img src="images/app-header/aws-zero-downtime-app.svg" alt="Zero-Downtime Deployments on AWS preview" loading="lazy" /></div>
+            <div class="card-body">
+              <div class="card-head">
+                <h3>Zero-Downtime Deployments on AWS</h3>
+              </div>
+              <p class="card-desc">A hands-on AWS project on deploying application updates without interrupting service availability.</p>
+              <div class="tag-row">
+                <span class="tag">aws</span>
+                <span class="tag">deployment</span>
+                <span class="tag">high availability</span>
+              </div>
+              <a class="card-link" href="https://nextwork.ai/determined_brown_optimistic_quince/docs/562f312b-a9ab-4743-ba9a-7ff8b6be56ae" target="_blank" rel="noopener" aria-label="View project write-up" title="View project write-up"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></svg></a>
+            </div>
+          </article>
+
+          <article class="card project-card reveal" hidden>
+            <div class="project-thumb has-image"><img src="images/app-header/aws-private-subnet-app.svg" alt="Creating a Private Subnet preview" loading="lazy" /></div>
+            <div class="card-body">
+              <div class="card-head">
+                <h3>Creating a Private Subnet</h3>
+              </div>
+              <p class="card-desc">A hands-on AWS networking project building an isolated private subnet inside a VPC.</p>
+              <div class="tag-row">
+                <span class="tag">aws</span>
+                <span class="tag">vpc</span>
+                <span class="tag">subnets</span>
+              </div>
+              <a class="card-link" href="https://nextwork.ai/determined_brown_optimistic_quince/docs/4e96e29d-98b8-551e-ae93-da39c36e30fd" target="_blank" rel="noopener" aria-label="View project write-up" title="View project write-up"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></svg></a>
+            </div>
+          </article>
+
+          <article class="card project-card reveal" hidden>
+            <div class="project-thumb has-image"><img src="images/app-header/aws-iam-app.png" alt="Cloud Security with AWS IAM preview" loading="lazy" /></div>
+            <div class="card-body">
+              <div class="card-head">
+                <h3>Cloud Security with AWS IAM</h3>
+              </div>
+              <p class="card-desc">A hands-on AWS security project applying IAM best practices for users, roles, and permissions.</p>
+              <div class="tag-row">
+                <span class="tag">aws</span>
+                <span class="tag">iam</span>
+                <span class="tag">security</span>
+              </div>
+              <a class="card-link" href="https://nextwork.ai/determined_brown_optimistic_quince/docs/51a5fd24-7458-58a6-8653-9b90119a0e4a" target="_blank" rel="noopener" aria-label="View project write-up" title="View project write-up"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></svg></a>
+            </div>
+          </article>
+
+          <article class="card project-card reveal" hidden>
+            <div class="project-thumb has-image"><img src="images/app-header/aws-vpc-app.png" alt="Build a Virtual Private Cloud preview" loading="lazy" /></div>
+            <div class="card-body">
+              <div class="card-head">
+                <h3>Build a Virtual Private Cloud</h3>
+              </div>
+              <p class="card-desc">A hands-on AWS networking project setting up a Virtual Private Cloud from scratch.</p>
+              <div class="tag-row">
+                <span class="tag">aws</span>
+                <span class="tag">vpc</span>
+                <span class="tag">networking</span>
+              </div>
+              <a class="card-link" href="https://nextwork.ai/determined_brown_optimistic_quince/docs/7f907ac7-2473-5c15-a8be-edb36581cdba" target="_blank" rel="noopener" aria-label="View project write-up" title="View project write-up"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></svg></a>
+            </div>
+          </article>
+
+          <article class="card project-card reveal" hidden>
+            <div class="project-thumb has-image"><img src="images/app-header/aws-finance-agent-app.svg" alt="AI Finance Agent with Amazon Bedrock preview" loading="lazy" /></div>
+            <div class="card-body">
+              <div class="card-head">
+                <h3>AI Finance Agent with Amazon Bedrock</h3>
+              </div>
+              <p class="card-desc">An AI financial agent built on Amazon Bedrock for finance-related analysis and decisions.</p>
+              <div class="tag-row">
+                <span class="tag">aws</span>
+                <span class="tag">bedrock</span>
+                <span class="tag">ai agent</span>
+              </div>
+              <a class="card-link" href="https://nextwork.ai/determined_brown_optimistic_quince/docs/0e774b8e-2692-5649-a933-487afa1742ab" target="_blank" rel="noopener" aria-label="View project write-up" title="View project write-up"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></svg></a>
+            </div>
+          </article>
+
+          <article class="card project-card reveal" hidden>
+            <div class="project-thumb has-image"><img src="images/app-header/aws-email-router-app.svg" alt="AI Email Router with Bedrock Flows preview" loading="lazy" /></div>
+            <div class="card-body">
+              <div class="card-head">
+                <h3>AI Email Router with Bedrock Flows</h3>
+              </div>
+              <p class="card-desc">An AI email routing system that uses Amazon Bedrock Flows to automatically direct incoming messages.</p>
+              <div class="tag-row">
+                <span class="tag">aws</span>
+                <span class="tag">bedrock</span>
+                <span class="tag">bedrock flows</span>
+              </div>
+              <a class="card-link" href="https://nextwork.ai/determined_brown_optimistic_quince/docs/1ad0650f-9ca0-5154-9968-d73bd3d10eed" target="_blank" rel="noopener" aria-label="View project write-up" title="View project write-up"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></svg></a>
+            </div>
+          </article>
+
+          <article class="card project-card reveal" hidden>
+            <div class="project-thumb has-image"><img src="images/app-header/aws-bedrock-chatbot-app.svg" alt="Build an AI Chatbot with Amazon Bedrock preview" loading="lazy" /></div>
+            <div class="card-body">
+              <div class="card-head">
+                <h3>Build an AI Chatbot with Amazon Bedrock</h3>
+              </div>
+              <p class="card-desc">A conversational AI chatbot built on Amazon Bedrock foundation models.</p>
+              <div class="tag-row">
+                <span class="tag">aws</span>
+                <span class="tag">bedrock</span>
+                <span class="tag">chatbot</span>
+              </div>
+              <a class="card-link" href="https://nextwork.ai/determined_brown_optimistic_quince/docs/5a33756f-a675-5a80-9738-048dc500cabc" target="_blank" rel="noopener" aria-label="View project write-up" title="View project write-up"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></svg></a>
+            </div>
+          </article>
+
+          <article class="card project-card reveal" hidden>
+            <div class="project-thumb has-image"><img src="images/app-header/aws-lex-app.png" alt="Build a Chatbot with Amazon Lex preview" loading="lazy" /></div>
+            <div class="card-body">
+              <div class="card-head">
+                <h3>Build a Chatbot with Amazon Lex</h3>
+              </div>
+              <p class="card-desc">A conversational chatbot built with Amazon Lex natural language understanding.</p>
+              <div class="tag-row">
+                <span class="tag">aws</span>
+                <span class="tag">lex</span>
+                <span class="tag">chatbot</span>
+              </div>
+              <a class="card-link" href="https://nextwork.ai/determined_brown_optimistic_quince/docs/143bcc99-ef5a-58e7-96f0-45d7c00b761a" target="_blank" rel="noopener" aria-label="View project write-up" title="View project write-up"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></svg></a>
+            </div>
+          </article>
+
+          <article class="card project-card reveal" hidden>
+            <div class="project-thumb has-image"><img src="images/app-header/aws-s3-app.png" alt="Host a Website on Amazon S3 preview" loading="lazy" /></div>
+            <div class="card-body">
+              <div class="card-head">
+                <h3>Host a Website on Amazon S3</h3>
+              </div>
+              <p class="card-desc">A static website deployed and hosted on Amazon S3.</p>
+              <div class="tag-row">
+                <span class="tag">aws</span>
+                <span class="tag">s3</span>
+                <span class="tag">static hosting</span>
+              </div>
+              <a class="card-link" href="https://nextwork.ai/determined_brown_optimistic_quince/docs/70e2d059-31ab-5f67-8c58-f5edbd451140" target="_blank" rel="noopener" aria-label="View project write-up" title="View project write-up"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></svg></a>
+            </div>
+          </article>
+
+          <article class="card project-card reveal" hidden>
+            <div class="project-thumb has-image"><img src="images/app-header/aws-dynamodb-app.svg" alt="Load Data into DynamoDB preview" loading="lazy" /></div>
+            <div class="card-body">
+              <div class="card-head">
+                <h3>Load Data into DynamoDB</h3>
+              </div>
+              <p class="card-desc">A hands-on AWS database project importing and populating data into Amazon DynamoDB.</p>
+              <div class="tag-row">
+                <span class="tag">aws</span>
+                <span class="tag">dynamodb</span>
+                <span class="tag">nosql</span>
+              </div>
+              <a class="card-link" href="https://nextwork.ai/determined_brown_optimistic_quince/docs/8bd82466-f5ee-569e-9125-2c4c6ce7a07f" target="_blank" rel="noopener" aria-label="View project write-up" title="View project write-up"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></svg></a>
+            </div>
+          </article>
+
+          <article class="card project-card reveal" hidden>
+            <div class="project-thumb has-image"><img src="images/app-header/foundit-app.png" alt="FoundIt app preview" loading="lazy" /></div>
             <div class="card-body">
               <div class="card-head">
                 <h3>FoundIt</h3>
@@ -675,12 +871,15 @@
                 <span class="tag">supabase</span>
                 <span class="tag">tailwind</span>
               </div>
-              <a class="card-link" href="https://foundit-ashen.vercel.app" target="_blank" rel="noopener">view project ↗</a>
+              <div class="card-actions">
+                <a class="card-link" href="https://foundit-ashen.vercel.app" target="_blank" rel="noopener" aria-label="View live project" title="View live project"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></svg></a>
+                <a class="card-github" href="https://github.com/caramel-123/FoundIt" target="_blank" rel="noopener" aria-label="View source on GitHub" title="View source on GitHub"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.1.79-.25.79-.56v-2c-3.2.7-3.87-1.54-3.87-1.54-.52-1.33-1.28-1.69-1.28-1.69-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.03 1.76 2.69 1.25 3.35.96.1-.74.4-1.25.73-1.54-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.28 1.18-3.08-.12-.29-.51-1.46.11-3.05 0 0 .97-.31 3.16 1.18a10.9 10.9 0 0 1 5.76 0c2.19-1.49 3.15-1.18 3.15-1.18.63 1.59.24 2.76.12 3.05.74.8 1.18 1.82 1.18 3.08 0 4.42-2.69 5.39-5.26 5.68.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.51 11.51 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z"/></svg></a>
+              </div>
             </div>
           </article>
 
           <article class="card project-card reveal" hidden>
-            <div class="project-thumb halftone-thumb" aria-hidden="true"></div>
+            <div class="project-thumb has-image"><img src="images/app-header/dunong-app.png" alt="Dunong app preview" loading="lazy" /></div>
             <div class="card-body">
               <div class="card-head">
                 <h3>Dunong</h3>
@@ -692,12 +891,15 @@
                 <span class="tag">express</span>
                 <span class="tag">groq</span>
               </div>
-              <a class="card-link" href="https://dunong-pinoy.vercel.app/" target="_blank" rel="noopener">view project ↗</a>
+              <div class="card-actions">
+                <a class="card-link" href="https://dunong-pinoy.vercel.app/" target="_blank" rel="noopener" aria-label="View live project" title="View live project"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></svg></a>
+                <a class="card-github" href="https://github.com/KRMeeag/dunong" target="_blank" rel="noopener" aria-label="View source on GitHub" title="View source on GitHub"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.1.79-.25.79-.56v-2c-3.2.7-3.87-1.54-3.87-1.54-.52-1.33-1.28-1.69-1.28-1.69-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.03 1.76 2.69 1.25 3.35.96.1-.74.4-1.25.73-1.54-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.28 1.18-3.08-.12-.29-.51-1.46.11-3.05 0 0 .97-.31 3.16 1.18a10.9 10.9 0 0 1 5.76 0c2.19-1.49 3.15-1.18 3.15-1.18.63 1.59.24 2.76.12 3.05.74.8 1.18 1.82 1.18 3.08 0 4.42-2.69 5.39-5.26 5.68.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.51 11.51 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z"/></svg></a>
+              </div>
             </div>
           </article>
 
           <article class="card project-card reveal" hidden>
-            <div class="project-thumb halftone-thumb" aria-hidden="true"></div>
+            <div class="project-thumb has-image"><img src="images/app-header/tiles1-app.png" alt="Tiles app preview" loading="lazy" /></div>
             <div class="card-body">
               <div class="card-head">
                 <h3>Tiles</h3>
@@ -709,12 +911,15 @@
                 <span class="tag">tailwind</span>
                 <span class="tag">firebase</span>
               </div>
-              <a class="card-link" href="https://tiles-ashen.vercel.app/" target="_blank" rel="noopener">view project ↗</a>
+              <div class="card-actions">
+                <a class="card-link" href="https://tiles-ashen.vercel.app/" target="_blank" rel="noopener" aria-label="View live project" title="View live project"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></svg></a>
+                <a class="card-github" href="https://github.com/caramel-123/Tiles" target="_blank" rel="noopener" aria-label="View source on GitHub" title="View source on GitHub"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.1.79-.25.79-.56v-2c-3.2.7-3.87-1.54-3.87-1.54-.52-1.33-1.28-1.69-1.28-1.69-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.03 1.76 2.69 1.25 3.35.96.1-.74.4-1.25.73-1.54-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.28 1.18-3.08-.12-.29-.51-1.46.11-3.05 0 0 .97-.31 3.16 1.18a10.9 10.9 0 0 1 5.76 0c2.19-1.49 3.15-1.18 3.15-1.18.63 1.59.24 2.76.12 3.05.74.8 1.18 1.82 1.18 3.08 0 4.42-2.69 5.39-5.26 5.68.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.51 11.51 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z"/></svg></a>
+              </div>
             </div>
           </article>
 
           <article class="card project-card reveal" hidden>
-            <div class="project-thumb halftone-thumb" aria-hidden="true"></div>
+            <div class="project-thumb has-image"><img src="images/app-header/balikbayan-app.png" alt="BalikBayan app preview" loading="lazy" /></div>
             <div class="card-body">
               <div class="card-head">
                 <h3>BalikBayan</h3>
@@ -726,12 +931,15 @@
                 <span class="tag">stellar</span>
                 <span class="tag">soroban</span>
               </div>
-              <a class="card-link" href="https://balikbayan2-stellar.vercel.app/" target="_blank" rel="noopener">view project ↗</a>
+              <div class="card-actions">
+                <a class="card-link" href="https://balikbayan2-stellar.vercel.app/" target="_blank" rel="noopener" aria-label="View live project" title="View live project"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></svg></a>
+                <a class="card-github" href="https://github.com/caramel-123/balikbayan2_stellar" target="_blank" rel="noopener" aria-label="View source on GitHub" title="View source on GitHub"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.1.79-.25.79-.56v-2c-3.2.7-3.87-1.54-3.87-1.54-.52-1.33-1.28-1.69-1.28-1.69-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.03 1.76 2.69 1.25 3.35.96.1-.74.4-1.25.73-1.54-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.28 1.18-3.08-.12-.29-.51-1.46.11-3.05 0 0 .97-.31 3.16 1.18a10.9 10.9 0 0 1 5.76 0c2.19-1.49 3.15-1.18 3.15-1.18.63 1.59.24 2.76.12 3.05.74.8 1.18 1.82 1.18 3.08 0 4.42-2.69 5.39-5.26 5.68.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.51 11.51 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z"/></svg></a>
+              </div>
             </div>
           </article>
 
           <article class="card project-card reveal" hidden>
-            <div class="project-thumb halftone-thumb" aria-hidden="true"></div>
+            <div class="project-thumb has-image"><img src="images/app-header/tala-app.png" alt="TALA app preview" loading="lazy" /></div>
             <div class="card-body">
               <div class="card-head">
                 <h3>TALA</h3>
@@ -742,12 +950,12 @@
                 <span class="tag">data viz</span>
                 <span class="tag">dost-sei</span>
               </div>
-              <a class="card-link" href="https://tala-project-start.vercel.app/" target="_blank" rel="noopener">view project ↗</a>
+              <a class="card-link" href="https://tala-project-start.vercel.app/" target="_blank" rel="noopener" aria-label="View live project" title="View live project"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></svg></a>
             </div>
           </article>
 
           <article class="card project-card reveal" hidden>
-            <div class="project-thumb halftone-thumb" aria-hidden="true"></div>
+            <div class="project-thumb has-image"><img src="images/app-header/myclient-app.png" alt="MyClient app preview" loading="lazy" /></div>
             <div class="card-body">
               <div class="card-head">
                 <h3>MyClient</h3>
@@ -758,12 +966,12 @@
                 <span class="tag">gemini</span>
                 <span class="tag">firebase</span>
               </div>
-              <a class="card-link" href="https://myclient-sparkfest.web.app" target="_blank" rel="noopener">view project ↗</a>
+              <a class="card-link" href="https://myclient-sparkfest.web.app" target="_blank" rel="noopener" aria-label="View live project" title="View live project"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></svg></a>
             </div>
           </article>
 
           <article class="card project-card reveal" hidden>
-            <div class="project-thumb halftone-thumb" aria-hidden="true"></div>
+            <div class="project-thumb has-image"><img src="images/app-header/esumbong-app.png" alt="eSumbong app preview" loading="lazy" /></div>
             <div class="card-body">
               <div class="card-head">
                 <h3>eSumbong</h3>
@@ -774,12 +982,15 @@
                 <span class="tag">prisma</span>
                 <span class="tag">postgresql</span>
               </div>
-              <a class="card-link" href="https://esumbong-pwa.vercel.app/" target="_blank" rel="noopener">view project ↗</a>
+              <div class="card-actions">
+                <a class="card-link" href="https://esumbong-pwa.vercel.app/" target="_blank" rel="noopener" aria-label="View live project" title="View live project"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></svg></a>
+                <a class="card-github" href="https://github.com/caramel-123/esumbong-pwa" target="_blank" rel="noopener" aria-label="View source on GitHub" title="View source on GitHub"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.1.79-.25.79-.56v-2c-3.2.7-3.87-1.54-3.87-1.54-.52-1.33-1.28-1.69-1.28-1.69-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.03 1.76 2.69 1.25 3.35.96.1-.74.4-1.25.73-1.54-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.28 1.18-3.08-.12-.29-.51-1.46.11-3.05 0 0 .97-.31 3.16 1.18a10.9 10.9 0 0 1 5.76 0c2.19-1.49 3.15-1.18 3.15-1.18.63 1.59.24 2.76.12 3.05.74.8 1.18 1.82 1.18 3.08 0 4.42-2.69 5.39-5.26 5.68.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.51 11.51 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z"/></svg></a>
+              </div>
             </div>
           </article>
 
           <article class="card project-card reveal" hidden>
-            <div class="project-thumb halftone-thumb" aria-hidden="true"></div>
+            <div class="project-thumb has-image"><img src="images/app-header/riles-app.png" alt="Riles app preview" loading="lazy" /></div>
             <div class="card-body">
               <div class="card-head">
                 <h3>Riles</h3>
@@ -790,12 +1001,15 @@
                 <span class="tag">jetpack compose</span>
                 <span class="tag">android</span>
               </div>
-              <a class="card-link" href="https://github.com/caramel-123/trenenen_project-cursor" target="_blank" rel="noopener">view project ↗</a>
+              <div class="card-actions">
+                <a class="card-link" href="https://github.com/caramel-123/trenenen_project-cursor" target="_blank" rel="noopener" aria-label="View live project" title="View live project"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></svg></a>
+                <a class="card-github" href="https://github.com/caramel-123/trenenen_project-cursor" target="_blank" rel="noopener" aria-label="View source on GitHub" title="View source on GitHub"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.1.79-.25.79-.56v-2c-3.2.7-3.87-1.54-3.87-1.54-.52-1.33-1.28-1.69-1.28-1.69-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.03 1.76 2.69 1.25 3.35.96.1-.74.4-1.25.73-1.54-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.28 1.18-3.08-.12-.29-.51-1.46.11-3.05 0 0 .97-.31 3.16 1.18a10.9 10.9 0 0 1 5.76 0c2.19-1.49 3.15-1.18 3.15-1.18.63 1.59.24 2.76.12 3.05.74.8 1.18 1.82 1.18 3.08 0 4.42-2.69 5.39-5.26 5.68.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.51 11.51 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z"/></svg></a>
+              </div>
             </div>
           </article>
 
           <article class="card project-card reveal" hidden>
-            <div class="project-thumb halftone-thumb" aria-hidden="true"></div>
+            <div class="project-thumb has-image"><img src="images/app-header/lista-app.png" alt="Lista app preview" loading="lazy" /></div>
             <div class="card-body">
               <div class="card-head">
                 <h3>Lista</h3>
@@ -807,7 +1021,10 @@
                 <span class="tag">supabase</span>
                 <span class="tag">ollama</span>
               </div>
-              <a class="card-link" href="https://lista-orpin.vercel.app/" target="_blank" rel="noopener">view project ↗</a>
+              <div class="card-actions">
+                <a class="card-link" href="https://lista-orpin.vercel.app/" target="_blank" rel="noopener" aria-label="View live project" title="View live project"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></svg></a>
+                <a class="card-github" href="https://github.com/shanaczane/YoungStunnas-Lista" target="_blank" rel="noopener" aria-label="View source on GitHub" title="View source on GitHub"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.1.79-.25.79-.56v-2c-3.2.7-3.87-1.54-3.87-1.54-.52-1.33-1.28-1.69-1.28-1.69-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.03 1.76 2.69 1.25 3.35.96.1-.74.4-1.25.73-1.54-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.28 1.18-3.08-.12-.29-.51-1.46.11-3.05 0 0 .97-.31 3.16 1.18a10.9 10.9 0 0 1 5.76 0c2.19-1.49 3.15-1.18 3.15-1.18.63 1.59.24 2.76.12 3.05.74.8 1.18 1.82 1.18 3.08 0 4.42-2.69 5.39-5.26 5.68.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.51 11.51 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z"/></svg></a>
+              </div>
             </div>
           </article>
 
@@ -824,6 +1041,9 @@
         <div class="timeline" id="timeline">
 
           <div class="timeline-item reveal">
+            <div class="timeline-logo">
+              <img src="images/logos/gdg-logo.jpg" alt="Google Developer Groups logo" loading="lazy" />
+            </div>
             <div class="timeline-head">
               <h3 class="timeline-role"><a class="timeline-link" href="https://www.facebook.com/gdg.pupmnl" target="_blank" rel="noopener">Industry Partnerships Co-Lead <span class="timeline-org">@ Google Developer Groups PUP</span></a></h3>
               <span class="timeline-meta">Sept 2026 — Present · Sta Mesa, Manila</span>
@@ -835,6 +1055,9 @@
           </div>
 
           <div class="timeline-item reveal">
+            <div class="timeline-logo">
+              <img src="images/logos/aws-logo.jpeg" alt="AWS Student Builder Group logo" loading="lazy" />
+            </div>
             <div class="timeline-head">
               <h3 class="timeline-role"><a class="timeline-link" href="https://www.facebook.com/awssbg.pup.manila" target="_blank" rel="noopener">AI/ML Skill Builder Department Co-Lead <span class="timeline-org">@ AWS Student Builder Group, PUP</span></a></h3>
               <span class="timeline-meta">Sept 2026 — Present · Sta Mesa, Manila</span>
@@ -846,6 +1069,9 @@
           </div>
 
           <div class="timeline-item reveal">
+            <div class="timeline-logo">
+              <img src="images/logos/eskwelabs-logo.png" alt="Eskwelabs logo" loading="lazy" />
+            </div>
             <div class="timeline-head">
               <h3 class="timeline-role"><a class="timeline-link" href="https://www.facebook.com/Eskwelabs" target="_blank" rel="noopener">AI Solution Development Intern <span class="timeline-org">@ Eskwelabs</span></a></h3>
               <span class="timeline-meta">Aug 2026 — Present</span>
@@ -857,6 +1083,9 @@
           </div>
 
           <div class="timeline-item reveal">
+            <div class="timeline-logo">
+              <img src="images/logos/wecreate-logo.jpg" alt="WeCreate logo" loading="lazy" />
+            </div>
             <div class="timeline-head">
               <h3 class="timeline-role"><a class="timeline-link" href="https://www.facebook.com/WeCREATE.aus" target="_blank" rel="noopener">Externals <span class="timeline-org">@ WeCreate</span></a></h3>
               <span class="timeline-meta">Aug 2026 — Present</span>
@@ -868,24 +1097,51 @@
           </div>
 
           <div class="timeline-item reveal" hidden>
+            <div class="timeline-logo">
+              <img src="images/logos/devcon-logo.jpg" alt="DEVCON Manila logo" loading="lazy" />
+            </div>
             <div class="timeline-head">
               <h3 class="timeline-role"><a class="timeline-link" href="https://www.facebook.com/devconmanila" target="_blank" rel="noopener">AI Engineer <span class="timeline-org">@ DEVCON Manila</span></a></h3>
               <span class="timeline-meta">Aug 2026 — Present</span>
             </div>
+            <ul class="timeline-list">
+              <li>Build and ship AI-powered tools for DEVCON Manila, one of the Philippines' largest volunteer tech communities.</li>
+              <li>Collaborate with fellow engineers and community leads to turn chapter needs into working, practical products.</li>
+            </ul>
           </div>
 
           <div class="timeline-item reveal" hidden>
+            <div class="timeline-logo">
+              <img src="images/logos/ases-logo.jpg" alt="ASES Manila logo" loading="lazy" />
+            </div>
+            <div class="timeline-head">
+              <h3 class="timeline-role"><a class="timeline-link" href="https://www.facebook.com/asesmnl" target="_blank" rel="noopener">Community Member <span class="timeline-org">@ ASES Manila</span></a></h3>
+              <span class="timeline-meta">Aug 2026 — Present · Manila</span>
+            </div>
+            <ul class="timeline-list">
+              <li>Member of the Manila chapter of the Affiliate Stanford Entrepreneurial Society (ASES), Stanford's student entrepreneurship network of undergrads from across Manila's universities.</li>
+              <li>Build alongside fellow student founders and builders, growing my entrepreneurial network and startup skills.</li>
+            </ul>
+          </div>
+
+          <div class="timeline-item reveal" hidden>
+            <div class="timeline-logo">
+              <img src="images/logos/seeker-logo.jpg" alt="Seekers Guild logo" loading="lazy" />
+            </div>
             <div class="timeline-head">
               <h3 class="timeline-role"><a class="timeline-link" href="https://www.facebook.com/seekersguildcommunity" target="_blank" rel="noopener">Program Co-Lead <span class="timeline-org">@ Seekers Guild</span></a></h3>
               <span class="timeline-meta">Jul 2026 — Present</span>
             </div>
             <ul class="timeline-list">
-              <li>Seekers Guild is a free, open, merit-based founder community in the Philippines, where access to top experiences is earned through ranking, not payment.</li>
-              <li>Programs run on a set cadence: monthly Open Table meetups, quarterly Open Villa build lock-ins, biannual outreach, and a yearly awards event.</li>
+              <li>Plan and deliver the community's program calendar: monthly Open Table meetups, quarterly Open Villa build lock-ins, biannual outreach, and a yearly awards event.</li>
+              <li>Keep Seekers Guild free, open, and merit-based, giving Filipino founders a fair path to top experiences earned through ranking, not payment.</li>
             </ul>
           </div>
 
           <div class="timeline-item reveal" hidden>
+            <div class="timeline-logo">
+              <img src="images/logos/flyrank-logo.jpeg" alt="Flyrank logo" loading="lazy" />
+            </div>
             <div class="timeline-head">
               <h3 class="timeline-role"><a class="timeline-link" href="https://internship.flyrank.ai/" target="_blank" rel="noopener">Machine Learning Intern <span class="timeline-org">@ Flyrank</span></a></h3>
               <span class="timeline-meta">Jun 2026 — Present · Manila</span>
@@ -898,6 +1154,9 @@
           </div>
 
           <div class="timeline-item reveal" hidden>
+            <div class="timeline-logo">
+              <img src="images/logos/listo-logo.png" alt="Listo logo" loading="lazy" />
+            </div>
             <div class="timeline-head">
               <h3 class="timeline-role">Co-Founder &amp; Chief Experience Officer <span class="timeline-org">@ Listo</span></h3>
               <span class="timeline-meta">Mar 2026 — Present · Pasig, Manila</span>
@@ -910,6 +1169,9 @@
           </div>
 
           <div class="timeline-item reveal" hidden>
+            <div class="timeline-logo">
+              <img src="images/logos/gdg-logo.jpg" alt="Google Developer Groups logo" loading="lazy" />
+            </div>
             <div class="timeline-head">
               <h3 class="timeline-role"><a class="timeline-link" href="https://www.facebook.com/gdg.pupmnl" target="_blank" rel="noopener">CyberSecurity Cadet <span class="timeline-org">@ Google Developer Groups</span></a></h3>
               <span class="timeline-meta">Feb 2026 · Sta Mesa, Manila</span>
@@ -922,16 +1184,37 @@
           </div>
 
           <div class="timeline-item reveal" hidden>
+            <div class="timeline-logo">
+              <img src="images/logos/celestia-logo.jpg" alt="AWS Student Builder Group - Celestia logo" loading="lazy" />
+            </div>
+            <div class="timeline-head">
+              <h3 class="timeline-role"><a class="timeline-link" href="https://www.facebook.com/profile.php?id=61582494040025" target="_blank" rel="noopener">Volunteer <span class="timeline-org">@ AWS Student Builder Group - Celestia</span></a></h3>
+              <span class="timeline-meta">Feb 2026</span>
+            </div>
+            <ul class="timeline-list">
+              <li>Volunteered with an AWS-supported student community that helps students learn cloud computing, organize tech events, and build practical tech skills.</li>
+              <li>Supported workshops and community events, including Celestial Effervescence at the AWS Office in BGC.</li>
+            </ul>
+          </div>
+
+          <div class="timeline-item reveal" hidden>
+            <div class="timeline-logo">
+              <img src="images/logos/workflow-logo.jpg" alt="WorkFlow PH logo" loading="lazy" />
+            </div>
             <div class="timeline-head">
               <h3 class="timeline-role">WorkFlow PH <span class="timeline-org">Community Member</span></h3>
               <span class="timeline-meta">Feb 2026 — Present · Sta Mesa, Manila</span>
             </div>
             <ul class="timeline-list">
-              <li>Learning workflow automation using Zapier, n8n, and UiPath.</li>
+              <li>Build hands-on workflow automations with Zapier, n8n, and UiPath, turning repetitive manual tasks into automated flows.</li>
+              <li>Bring these automation skills into my own projects and teams, saving time on routine work.</li>
             </ul>
           </div>
 
           <div class="timeline-item reveal" hidden>
+            <div class="timeline-logo">
+              <img src="images/logos/datacamp-logo.png" alt="DataCamp logo" loading="lazy" />
+            </div>
             <div class="timeline-head">
               <h3 class="timeline-role"><a class="timeline-link" href="https://www.facebook.com/datacampinc" target="_blank" rel="noopener">DataCamp Scholar</a></h3>
               <span class="timeline-meta">Jan 2026 — Present · Sta Mesa, Manila</span>
@@ -943,6 +1226,9 @@
           </div>
 
           <div class="timeline-item reveal" hidden>
+            <div class="timeline-logo">
+              <img src="images/logos/wired-logo.jpg" alt="PUP Wired logo" loading="lazy" />
+            </div>
             <div class="timeline-head">
               <h3 class="timeline-role"><a class="timeline-link" href="https://www.facebook.com/pupwired" target="_blank" rel="noopener">Software Associate <span class="timeline-org">@ PUP Wired</span></a></h3>
               <span class="timeline-meta">Sept 2025 — Present · Sta Mesa, Manila</span>
@@ -954,6 +1240,9 @@
           </div>
 
           <div class="timeline-item reveal" hidden>
+            <div class="timeline-logo">
+              <img src="images/logos/dost-logo.jpeg" alt="DOST logo" loading="lazy" />
+            </div>
             <div class="timeline-head">
               <h3 class="timeline-role">DOST-SEI S&amp;T Undergraduate Scholar</h3>
               <span class="timeline-meta">Aug 2025 — Present · Antipolo City, Rizal</span>
@@ -971,109 +1260,109 @@
           <div class="stack-group">
             <p class="stack-group-label">Languages</p>
             <div class="tag-row">
-              <span class="tag">c</span>
-              <span class="tag">c++</span>
-              <span class="tag">html5</span>
-              <span class="tag">css3</span>
-              <span class="tag">javascript</span>
-              <span class="tag">typescript</span>
-              <span class="tag">python</span>
-              <span class="tag">solidity</span>
-              <span class="tag">kotlin</span>
-              <span class="tag">rust</span>
+              <span class="tag"><i class="tag-icon" style="-webkit-mask-image:url(images/stack/c.svg);mask-image:url(images/stack/c.svg)" aria-hidden="true"></i>c</span>
+              <span class="tag"><i class="tag-icon" style="-webkit-mask-image:url(images/stack/c.svg);mask-image:url(images/stack/c.svg)" aria-hidden="true"></i>c++</span>
+              <span class="tag"><i class="tag-icon" style="-webkit-mask-image:url(images/stack/html5.svg);mask-image:url(images/stack/html5.svg)" aria-hidden="true"></i>html5</span>
+              <span class="tag"><i class="tag-icon" style="-webkit-mask-image:url(images/stack/css3.svg);mask-image:url(images/stack/css3.svg)" aria-hidden="true"></i>css3</span>
+              <span class="tag"><i class="tag-icon" style="-webkit-mask-image:url(images/stack/javascript.svg);mask-image:url(images/stack/javascript.svg)" aria-hidden="true"></i>javascript</span>
+              <span class="tag"><i class="tag-icon" style="-webkit-mask-image:url(images/stack/typescript.svg);mask-image:url(images/stack/typescript.svg)" aria-hidden="true"></i>typescript</span>
+              <span class="tag"><i class="tag-icon" style="-webkit-mask-image:url(images/stack/python.svg);mask-image:url(images/stack/python.svg)" aria-hidden="true"></i>python</span>
+              <span class="tag"><i class="tag-icon" style="-webkit-mask-image:url(images/stack/solidity.svg);mask-image:url(images/stack/solidity.svg)" aria-hidden="true"></i>solidity</span>
+              <span class="tag"><i class="tag-icon" style="-webkit-mask-image:url(images/stack/kotlin.svg);mask-image:url(images/stack/kotlin.svg)" aria-hidden="true"></i>kotlin</span>
+              <span class="tag"><i class="tag-icon" style="-webkit-mask-image:url(images/stack/rust.svg);mask-image:url(images/stack/rust.svg)" aria-hidden="true"></i>rust</span>
             </div>
           </div>
 
           <div class="stack-group">
             <p class="stack-group-label">Frontend</p>
             <div class="tag-row">
-              <span class="tag">react</span>
-              <span class="tag">react router</span>
-              <span class="tag">react native</span>
-              <span class="tag">react query</span>
-              <span class="tag">next.js</span>
-              <span class="tag">vite</span>
-              <span class="tag">tailwind css</span>
-              <span class="tag">jetpack compose</span>
+              <span class="tag"><i class="tag-icon" style="-webkit-mask-image:url(images/stack/react.svg);mask-image:url(images/stack/react.svg)" aria-hidden="true"></i>react</span>
+              <span class="tag"><i class="tag-icon" style="-webkit-mask-image:url(images/stack/react-router.svg);mask-image:url(images/stack/react-router.svg)" aria-hidden="true"></i>react router</span>
+              <span class="tag"><i class="tag-icon" style="-webkit-mask-image:url(images/stack/react-native.svg);mask-image:url(images/stack/react-native.svg)" aria-hidden="true"></i>react native</span>
+              <span class="tag"><i class="tag-icon" style="-webkit-mask-image:url(images/stack/react-query.svg);mask-image:url(images/stack/react-query.svg)" aria-hidden="true"></i>react query</span>
+              <span class="tag"><i class="tag-icon" style="-webkit-mask-image:url(images/stack/next-js.svg);mask-image:url(images/stack/next-js.svg)" aria-hidden="true"></i>next.js</span>
+              <span class="tag"><i class="tag-icon" style="-webkit-mask-image:url(images/stack/vite.svg);mask-image:url(images/stack/vite.svg)" aria-hidden="true"></i>vite</span>
+              <span class="tag"><i class="tag-icon" style="-webkit-mask-image:url(images/stack/tailwind-css.svg);mask-image:url(images/stack/tailwind-css.svg)" aria-hidden="true"></i>tailwind css</span>
+              <span class="tag"><i class="tag-icon" style="-webkit-mask-image:url(images/stack/jetpack-compose.svg);mask-image:url(images/stack/jetpack-compose.svg)" aria-hidden="true"></i>jetpack compose</span>
             </div>
           </div>
 
           <div class="stack-group">
             <p class="stack-group-label">Backend &amp; Databases</p>
             <div class="tag-row">
-              <span class="tag">node.js</span>
-              <span class="tag">express</span>
-              <span class="tag">fastapi</span>
-              <span class="tag">mysql</span>
-              <span class="tag">postgresql</span>
-              <span class="tag">prisma</span>
-              <span class="tag">supabase</span>
-              <span class="tag">firebase</span>
+              <span class="tag"><i class="tag-icon" style="-webkit-mask-image:url(images/stack/node-js.svg);mask-image:url(images/stack/node-js.svg)" aria-hidden="true"></i>node.js</span>
+              <span class="tag"><i class="tag-icon" style="-webkit-mask-image:url(images/stack/express.svg);mask-image:url(images/stack/express.svg)" aria-hidden="true"></i>express</span>
+              <span class="tag"><i class="tag-icon" style="-webkit-mask-image:url(images/stack/fastapi.svg);mask-image:url(images/stack/fastapi.svg)" aria-hidden="true"></i>fastapi</span>
+              <span class="tag"><i class="tag-icon" style="-webkit-mask-image:url(images/stack/mysql.svg);mask-image:url(images/stack/mysql.svg)" aria-hidden="true"></i>mysql</span>
+              <span class="tag"><i class="tag-icon" style="-webkit-mask-image:url(images/stack/postgresql.svg);mask-image:url(images/stack/postgresql.svg)" aria-hidden="true"></i>postgresql</span>
+              <span class="tag"><i class="tag-icon" style="-webkit-mask-image:url(images/stack/prisma.svg);mask-image:url(images/stack/prisma.svg)" aria-hidden="true"></i>prisma</span>
+              <span class="tag"><i class="tag-icon" style="-webkit-mask-image:url(images/stack/supabase.svg);mask-image:url(images/stack/supabase.svg)" aria-hidden="true"></i>supabase</span>
+              <span class="tag"><i class="tag-icon" style="-webkit-mask-image:url(images/stack/firebase.svg);mask-image:url(images/stack/firebase.svg)" aria-hidden="true"></i>firebase</span>
             </div>
           </div>
 
           <div class="stack-group">
             <p class="stack-group-label">AI &amp; ML</p>
             <div class="tag-row">
-              <span class="tag">numpy</span>
-              <span class="tag">pandas</span>
-              <span class="tag">groq</span>
-              <span class="tag">whisper</span>
-              <span class="tag">gemini</span>
-              <span class="tag">claude</span>
-              <span class="tag">ollama</span>
+              <span class="tag"><i class="tag-icon" style="-webkit-mask-image:url(images/stack/numpy.svg);mask-image:url(images/stack/numpy.svg)" aria-hidden="true"></i>numpy</span>
+              <span class="tag"><i class="tag-icon" style="-webkit-mask-image:url(images/stack/pandas.svg);mask-image:url(images/stack/pandas.svg)" aria-hidden="true"></i>pandas</span>
+              <span class="tag"><i class="tag-icon" style="-webkit-mask-image:url(images/stack/groq.svg);mask-image:url(images/stack/groq.svg)" aria-hidden="true"></i>groq</span>
+              <span class="tag"><i class="tag-icon" style="-webkit-mask-image:url(images/stack/whisper.svg);mask-image:url(images/stack/whisper.svg)" aria-hidden="true"></i>whisper</span>
+              <span class="tag"><i class="tag-icon" style="-webkit-mask-image:url(images/stack/gemini.svg);mask-image:url(images/stack/gemini.svg)" aria-hidden="true"></i>gemini</span>
+              <span class="tag"><i class="tag-icon" style="-webkit-mask-image:url(images/stack/claude.svg);mask-image:url(images/stack/claude.svg)" aria-hidden="true"></i>claude</span>
+              <span class="tag"><i class="tag-icon" style="-webkit-mask-image:url(images/stack/ollama.svg);mask-image:url(images/stack/ollama.svg)" aria-hidden="true"></i>ollama</span>
             </div>
           </div>
 
           <div class="stack-group">
             <p class="stack-group-label">Blockchain</p>
             <div class="tag-row">
-              <span class="tag">web3.js</span>
-              <span class="tag">stellar sdk</span>
-              <span class="tag">soroban</span>
-              <span class="tag">freighter wallet</span>
-              <span class="tag">polkadot</span>
-              <span class="tag">smart contracts</span>
+              <span class="tag"><i class="tag-icon" style="-webkit-mask-image:url(images/stack/web3-js.svg);mask-image:url(images/stack/web3-js.svg)" aria-hidden="true"></i>web3.js</span>
+              <span class="tag"><i class="tag-icon" style="-webkit-mask-image:url(images/stack/stellar-sdk.svg);mask-image:url(images/stack/stellar-sdk.svg)" aria-hidden="true"></i>stellar sdk</span>
+              <span class="tag"><i class="tag-icon" style="-webkit-mask-image:url(images/stack/soroban.svg);mask-image:url(images/stack/soroban.svg)" aria-hidden="true"></i>soroban</span>
+              <span class="tag"><i class="tag-icon" style="-webkit-mask-image:url(images/stack/freighter-wallet.svg);mask-image:url(images/stack/freighter-wallet.svg)" aria-hidden="true"></i>freighter wallet</span>
+              <span class="tag"><i class="tag-icon" style="-webkit-mask-image:url(images/stack/polkadot.svg);mask-image:url(images/stack/polkadot.svg)" aria-hidden="true"></i>polkadot</span>
+              <span class="tag"><i class="tag-icon" style="-webkit-mask-image:url(images/stack/smart-contracts.svg);mask-image:url(images/stack/smart-contracts.svg)" aria-hidden="true"></i>smart contracts</span>
             </div>
           </div>
 
           <div class="stack-group">
             <p class="stack-group-label">Automation &amp; Hardware</p>
             <div class="tag-row">
-              <span class="tag">zapier</span>
-              <span class="tag">n8n</span>
-              <span class="tag">uipath</span>
-              <span class="tag">arduino</span>
+              <span class="tag"><i class="tag-icon" style="-webkit-mask-image:url(images/stack/zapier.svg);mask-image:url(images/stack/zapier.svg)" aria-hidden="true"></i>zapier</span>
+              <span class="tag"><i class="tag-icon" style="-webkit-mask-image:url(images/stack/n8n.svg);mask-image:url(images/stack/n8n.svg)" aria-hidden="true"></i>n8n</span>
+              <span class="tag"><i class="tag-icon" style="-webkit-mask-image:url(images/stack/uipath.svg);mask-image:url(images/stack/uipath.svg)" aria-hidden="true"></i>uipath</span>
+              <span class="tag"><i class="tag-icon" style="-webkit-mask-image:url(images/stack/arduino.svg);mask-image:url(images/stack/arduino.svg)" aria-hidden="true"></i>arduino</span>
             </div>
           </div>
 
           <div class="stack-group">
             <p class="stack-group-label">Cloud &amp; Deployment</p>
             <div class="tag-row">
-              <span class="tag">aws</span>
-              <span class="tag">google cloud</span>
-              <span class="tag">vercel</span>
+              <span class="tag"><i class="tag-icon" style="-webkit-mask-image:url(images/stack/aws.svg);mask-image:url(images/stack/aws.svg)" aria-hidden="true"></i>aws</span>
+              <span class="tag"><i class="tag-icon" style="-webkit-mask-image:url(images/stack/google-cloud.svg);mask-image:url(images/stack/google-cloud.svg)" aria-hidden="true"></i>google cloud</span>
+              <span class="tag"><i class="tag-icon" style="-webkit-mask-image:url(images/stack/vercel.svg);mask-image:url(images/stack/vercel.svg)" aria-hidden="true"></i>vercel</span>
             </div>
           </div>
 
           <div class="stack-group">
             <p class="stack-group-label">Testing</p>
             <div class="tag-row">
-              <span class="tag">jasmine</span>
-              <span class="tag">vitest</span>
+              <span class="tag"><i class="tag-icon" style="-webkit-mask-image:url(images/stack/jasmine.svg);mask-image:url(images/stack/jasmine.svg)" aria-hidden="true"></i>jasmine</span>
+              <span class="tag"><i class="tag-icon" style="-webkit-mask-image:url(images/stack/vitest.svg);mask-image:url(images/stack/vitest.svg)" aria-hidden="true"></i>vitest</span>
             </div>
           </div>
 
           <div class="stack-group">
             <p class="stack-group-label">Tools</p>
             <div class="tag-row">
-              <span class="tag">git</span>
-              <span class="tag">github</span>
-              <span class="tag">gitlab</span>
-              <span class="tag">figma</span>
-              <span class="tag">canva</span>
-              <span class="tag">notion</span>
-              <span class="tag">prettier</span>
+              <span class="tag"><i class="tag-icon" style="-webkit-mask-image:url(images/stack/git.svg);mask-image:url(images/stack/git.svg)" aria-hidden="true"></i>git</span>
+              <span class="tag"><i class="tag-icon" style="-webkit-mask-image:url(images/stack/github.svg);mask-image:url(images/stack/github.svg)" aria-hidden="true"></i>github</span>
+              <span class="tag"><i class="tag-icon" style="-webkit-mask-image:url(images/stack/gitlab.svg);mask-image:url(images/stack/gitlab.svg)" aria-hidden="true"></i>gitlab</span>
+              <span class="tag"><i class="tag-icon" style="-webkit-mask-image:url(images/stack/figma.svg);mask-image:url(images/stack/figma.svg)" aria-hidden="true"></i>figma</span>
+              <span class="tag"><i class="tag-icon" style="-webkit-mask-image:url(images/stack/canva.svg);mask-image:url(images/stack/canva.svg)" aria-hidden="true"></i>canva</span>
+              <span class="tag"><i class="tag-icon" style="-webkit-mask-image:url(images/stack/notion.svg);mask-image:url(images/stack/notion.svg)" aria-hidden="true"></i>notion</span>
+              <span class="tag"><i class="tag-icon" style="-webkit-mask-image:url(images/stack/prettier.svg);mask-image:url(images/stack/prettier.svg)" aria-hidden="true"></i>prettier</span>
             </div>
           </div>
 
@@ -1212,6 +1501,6 @@
     </div>
   </div>
 
-  <script src="js/main.js"></script>
+  <script src="js/main.js?v=2"></script>
 </body>
 </html>
