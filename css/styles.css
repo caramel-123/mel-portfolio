@@ -2208,3 +2208,24 @@ html[data-theme='light'] .hero-card-front {
   mask-image: linear-gradient(to bottom, #000 82%, transparent 99%);
 }
 html[data-theme='light'] .hero-card-front .hero-photo { visibility: hidden; }
+
+/* ---- mobile polish (phones) ---- */
+@media (max-width: 639px) {
+  html, body { overflow-x: clip; }
+
+  /* hero: smaller portrait, tighter spacing */
+  .hero-grid { gap: 1.5rem; }
+  .hero-card { max-width: 300px; margin: 0 auto; }
+
+  /* experience: logo sits above the details instead of squeezing a narrow column */
+  .timeline-item { grid-template-columns: minmax(0, 1fr); gap: 0.85rem; padding: 1.5rem 0; }
+  .timeline-logo { justify-content: flex-start; }
+  .timeline-logo img { max-height: 56px; max-width: 120px; border-radius: 14px; }
+  .timeline-head { flex-direction: column; align-items: flex-start; gap: 0.25rem; }
+  .timeline-meta { white-space: normal; line-height: 1.5; }
+  .timeline-list { padding-left: 1rem; font-size: 0.875rem; }
+
+  /* roomier tap targets */
+  .menu-toggle::before { content: ''; position: absolute; inset: -12px -10px; }   /* bigger tap area, same look */
+  .mobile-menu .nav-list a { padding-block: 0.6rem; }
+}
