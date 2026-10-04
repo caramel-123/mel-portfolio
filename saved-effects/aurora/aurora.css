@@ -1,0 +1,20 @@
+/* Aurora borealis: styles for the effect (see aurora.js). */
+
+/* The canvas sits behind all content. The page needs a dark background for the glow to read well. */
+#aurora-canvas {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  pointer-events: none;
+  filter: blur(5px) saturate(1.25);
+  opacity: 0.9;
+}
+
+/* On dark backgrounds, blend the glow into the sky. */
+html[data-theme='dark'] #aurora-canvas,
+body.dark #aurora-canvas {
+  mix-blend-mode: screen;
+  opacity: 1;
+}

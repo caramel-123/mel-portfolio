@@ -1,0 +1,35 @@
+<!-- Journey tab panel: place with the other .tab-panel sections -->
+    <div class="tab-panel" data-tab="journey" id="tab-journey" hidden>
+      <section id="journey" class="section">
+        <p class="section-label">01 — journey</p>
+        <h2 class="journey-title">my journey</h2>
+        <p class="journey-copy">Every stage is an event I showed up for: workshops, hackathons and competitions. Tap a stage to see what happened there and the people I met.</p>
+        <div class="journey-legend" aria-hidden="true">
+          <span><i class="lg lg-done"></i>completed</span>
+          <span><i class="lg lg-next"></i>current</span>
+          <span><i class="lg lg-locked"></i>coming up</span>
+        </div>
+        <div class="journey-scroll" id="journey-scroll" tabindex="0" aria-label="Journey map, scroll sideways">
+          <div class="journey-map" id="journey-map"></div>
+        </div>
+        <div class="journey-scroll-nav">
+          <button type="button" class="journey-step" id="journey-left" aria-label="Scroll map left">← earlier</button>
+          <span class="journey-hint">drag or scroll sideways</span>
+          <button type="button" class="journey-step" id="journey-right" aria-label="Scroll map right">later →</button>
+        </div>
+      </section>
+    </div>
+
+
+<!-- Stage details pop-up: place before the closing body tag -->
+  <div class="journey-overlay" id="journey-overlay" hidden>
+    <div class="journey-modal" role="dialog" aria-modal="true" aria-labelledby="journey-modal-title" id="journey-modal">
+      <button class="journey-close" id="journey-close" type="button" aria-label="Close">×</button>
+      <div class="journey-modal-body" id="journey-modal-body"></div>
+      <div class="journey-modal-nav">
+        <button type="button" id="journey-prev" class="journey-step">← previous stage</button>
+        <button type="button" id="journey-next" class="journey-step">next stage →</button>
+      </div>
+    </div>
+  </div>
+
