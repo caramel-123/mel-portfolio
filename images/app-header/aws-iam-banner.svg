@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900" font-family="ui-monospace,Menlo,Consolas,monospace">
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#141417"/><stop offset="1" stop-color="#231a12"/></linearGradient>
+<linearGradient id="sh" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffc247"/><stop offset="1" stop-color="#ff7a1a"/></linearGradient>
+</defs>
+<rect width="1600" height="900" fill="url(#bg)"/>
+<g stroke="#ffb020" stroke-opacity=".12" stroke-width="2"><path d="M0 200 H1600 M0 450 H1600 M0 700 H1600 M400 0 V900 M800 0 V900 M1200 0 V900"/></g>
+<g transform="translate(800 450)">
+<path d="M0 -270 L190 -200 V-10 C190 110 110 200 0 250 C-110 200 -190 110 -190 -10 V-200 Z" fill="url(#sh)"/>
+<path d="M0 -226 L152 -170 V-12 C152 86 90 160 0 202 C-90 160 -152 86 -152 -12 V-170 Z" fill="#17120c"/>
+<circle cx="-34" cy="-40" r="46" fill="none" stroke="#ffb020" stroke-width="16"/><path d="M0 -20 H120 M92 -20 V12 M120 -20 V20" stroke="#ffb020" stroke-width="16" stroke-linecap="round"/></g>
+<g transform="translate(250 270)"><rect width="330" height="90" rx="45" fill="#1f1f24" stroke="#4a4a54" stroke-width="3"/><circle cx="45" cy="45" r="26" fill="#3a3a44"/><circle cx="45" cy="36" r="10" fill="#9a9aa8"/><path d="M27 62 a18 14 0 0 1 36 0" fill="#9a9aa8"/><rect x="92" y="30" width="140" height="12" rx="6" fill="#9a9aa8"/><rect x="92" y="52" width="90" height="10" rx="5" fill="#5c5c68"/><rect x="258" y="28" width="52" height="32" rx="16" fill="#ffb020"/><circle cx="294" cy="44" r="12" fill="#17120c"/></g>
+<g transform="translate(250 420)"><rect width="330" height="90" rx="45" fill="#1f1f24" stroke="#4a4a54" stroke-width="3"/><circle cx="45" cy="45" r="26" fill="#3a3a44"/><rect x="31" y="31" width="28" height="28" rx="8" fill="#9a9aa8"/><rect x="92" y="30" width="140" height="12" rx="6" fill="#9a9aa8"/><rect x="92" y="52" width="90" height="10" rx="5" fill="#5c5c68"/><rect x="258" y="28" width="52" height="32" rx="16" fill="#ffb020"/><circle cx="294" cy="44" r="12" fill="#17120c"/></g>
+<g transform="translate(250 570)"><rect width="330" height="90" rx="45" fill="#1f1f24" stroke="#4a4a54" stroke-width="3"/><circle cx="45" cy="45" r="26" fill="#3a3a44"/><circle cx="45" cy="45" r="11" fill="#9a9aa8"/><rect x="92" y="30" width="140" height="12" rx="6" fill="#9a9aa8"/><rect x="92" y="52" width="90" height="10" rx="5" fill="#5c5c68"/><rect x="258" y="28" width="52" height="32" rx="16" fill="#3a3a44"/><circle cx="274" cy="44" r="12" fill="#9a9aa8"/></g>
+<g transform="translate(1020 300)"><text fill="#ffb020" font-size="26" letter-spacing="4">POLICY</text><text y="56" fill="#e9e9ee" font-size="30">{ "Effect": "Allow",</text><text y="100" fill="#e9e9ee" font-size="30">  "Action": "s3:Get*" }</text><text y="170" fill="#ff7a8a" font-size="30">{ "Effect": "Deny",</text><text y="214" fill="#ff7a8a" font-size="30">  "Action": "iam:*" }</text></g>
+</svg>

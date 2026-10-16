@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900" font-family="ui-monospace,Menlo,Consolas,monospace">
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#04100b"/><stop offset="1" stop-color="#07231a"/></linearGradient>
+<linearGradient id="ar" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#34e5a0" stop-opacity=".45"/><stop offset="1" stop-color="#34e5a0" stop-opacity="0"/></linearGradient>
+</defs>
+<rect width="1600" height="900" fill="url(#bg)"/>
+<g stroke="#34e5a0" stroke-opacity=".12" stroke-width="2"><path d="M120 230 H1480 M120 340 H1480 M120 450 H1480 M120 560 H1480 M120 670 H1480"/></g>
+<path d="M140 640 L330 560 L470 600 L640 470 L800 500 L980 360 L1140 390 L1340 250 V700 H140 Z" fill="url(#ar)"/>
+<path d="M140 640 L330 560 L470 600 L640 470 L800 500 L980 360 L1140 390 L1340 250" fill="none" stroke="#34e5a0" stroke-width="8" stroke-linejoin="round" stroke-linecap="round"/>
+<g fill="#04100b" stroke="#34e5a0" stroke-width="6"><circle cx="640" cy="470" r="14"/><circle cx="980" cy="360" r="14"/><circle cx="1340" cy="250" r="14"/></g>
+<g stroke-width="8" stroke-linecap="round"><path d="M260 600 V690" stroke="#ff6b7a"/><path d="M400 570 V650" stroke="#34e5a0"/><path d="M560 540 V640" stroke="#34e5a0"/><path d="M720 480 V580" stroke="#ff6b7a"/><path d="M880 440 V540" stroke="#34e5a0"/><path d="M1060 360 V470" stroke="#34e5a0"/></g>
+<g transform="translate(150 150)"><rect width="500" height="150" rx="30" fill="#0b2a1f" stroke="#34e5a0" stroke-width="3"/><circle cx="62" cy="75" r="30" fill="#34e5a0"/><path d="M62 52 L66 68 L82 72 L66 76 L62 92 L58 76 L42 72 L58 68 Z" fill="#04100b"/><rect x="120" y="44" width="320" height="16" rx="8" fill="#d9fff0"/><rect x="120" y="76" width="250" height="14" rx="7" fill="#34e5a0" fill-opacity=".6"/><rect x="120" y="104" width="180" height="14" rx="7" fill="#34e5a0" fill-opacity=".3"/></g>
+<g transform="translate(1030 640)"><rect width="400" height="96" rx="48" fill="#34e5a0"/><text x="200" y="62" fill="#04100b" font-size="32" text-anchor="middle" letter-spacing="3">BUY · HOLD · SELL</text></g>
+</svg>

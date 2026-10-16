@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900" font-family="ui-monospace,Menlo,Consolas,monospace">
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f1f6ff"/><stop offset="1" stop-color="#cfe0ff"/></linearGradient>
+</defs>
+<rect width="1600" height="900" fill="url(#bg)"/>
+<g transform="translate(800 470)">
+<path d="M0 -260 L420 -40 L0 180 L-420 -40 Z" fill="#ffffff" stroke="#1d3a78" stroke-width="4"/>
+<g stroke="#1d3a78" stroke-opacity=".28" stroke-width="2"><path d="M-210 -150 L210 70 M-105 -205 L315 15 M105 -205 L-315 15 M210 -150 L-210 70 M0 -260 L0 180 M-420 -40 L420 -40"/></g>
+<path d="M-420 -40 V30 L0 250 V180 Z" fill="#9db9f0" stroke="#1d3a78" stroke-width="4" stroke-linejoin="round"/><path d="M420 -40 V30 L0 250 V180 Z" fill="#6f95e0" stroke="#1d3a78" stroke-width="4" stroke-linejoin="round"/>
+<g fill="#1d3a78"><circle cx="0" cy="-150" r="22"/><circle cx="-210" cy="-40" r="22"/><circle cx="210" cy="-40" r="22"/><circle cx="0" cy="70" r="22"/><circle cx="0" cy="-40" r="30" fill="#ff8a00"/></g>
+<g stroke="#1d3a78" stroke-width="5" stroke-linecap="round"><path d="M0 -128 L0 -72"/><path d="M-188 -40 L-32 -40"/><path d="M188 -40 L32 -40"/><path d="M0 48 L0 -10"/></g>
+</g>
+<g transform="translate(200 220)"><rect width="250" height="64" rx="32" fill="#1d3a78"/><text x="125" y="42" fill="#fff" font-size="26" text-anchor="middle" letter-spacing="3">10.0.0.0/16</text></g>
+<g transform="translate(1160 700)"><rect width="250" height="64" rx="32" fill="#fff" stroke="#1d3a78" stroke-width="3"/><text x="125" y="42" fill="#1d3a78" font-size="26" text-anchor="middle" letter-spacing="3">YOUR OWN NETWORK</text></g>
+</svg>
