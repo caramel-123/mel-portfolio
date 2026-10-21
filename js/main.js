@@ -186,10 +186,23 @@
           }
         });
       },
-      { threshold: 0.1 }
+      // a plain 10% threshold never fires on blocks taller than ten screens (like the Community post grid),
+      // so reveal anything whose top has come 10% into the viewport instead
+      { threshold: 0, rootMargin: '0px 0px -10% 0px' }
     );
 
     items.forEach(function (el) { observer.observe(el); });
+  }
+
+  // Skeleton loading: photos shimmer (see .is-loaded in styles.css) until they finish downloading.
+  function initImageSkeletons() {
+    function mark(e) { if (e.target.tagName === 'IMG') e.target.classList.add('is-loaded'); }
+    // load/error don't bubble, so listen in the capture phase; this also covers cards and gallery copies built later
+    document.addEventListener('load', mark, true);
+    document.addEventListener('error', mark, true);
+    document.querySelectorAll('img').forEach(function (img) {
+      if (img.complete) img.classList.add('is-loaded');
+    });
   }
 
   function initGalleryMarquee() {
@@ -1488,6 +1501,7 @@
   }
 
   document.addEventListener('DOMContentLoaded', function () {
+    initImageSkeletons();
     initTheme();
     initMobileMenu();
     initTabs();

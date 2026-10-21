@@ -2286,3 +2286,19 @@ html[data-theme='light'] .hero-card-front .hero-photo { visibility: hidden; }
   .menu-toggle::before { content: ''; position: absolute; inset: -12px -10px; }   /* bigger tap area, same look */
   .mobile-menu .nav-list a { padding-block: 0.6rem; }
 }
+
+/* ---- skeleton loading: post and gallery photos shimmer until they arrive, then fade in ---- */
+@keyframes skeleton-shimmer { from { background-position: 150% 0; } to { background-position: -50% 0; } }
+@keyframes img-in { from { opacity: 0; } to { opacity: 1; } }
+.post-thumb img,
+.gallery-item img {
+  background: var(--gray-200) linear-gradient(100deg, transparent 30%, var(--skeleton-shine, rgba(255, 255, 255, 0.6)) 50%, transparent 70%);
+  background-size: 200% 100%;
+  animation: skeleton-shimmer 1.4s ease-in-out infinite;
+}
+html[data-theme='dark'] { --skeleton-shine: rgba(255, 255, 255, 0.06); }
+.post-thumb img.is-loaded,
+.gallery-item img.is-loaded { background: none; animation: img-in 0.4s var(--ease-out); }
+@media (prefers-reduced-motion: reduce) {
+  .post-thumb img, .gallery-item img, .post-thumb img.is-loaded, .gallery-item img.is-loaded { animation: none; }
+}
